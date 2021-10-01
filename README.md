@@ -13,3 +13,5 @@ STRUCTURE
 This is a web project, planned to consist of a single html page, with a stylesheet, and a single script for processing user requests and returning the correct text.
 
 The texts are stored in a number of JSON files, which are in appropriate directories following closely the Anglican Breviary's structure, all within the 'texts' directory.
+
+Once the web version is up and running, if it proves useful, there is no reason why equivalent mobile apps couldn't be developed too.
