@@ -81,7 +81,7 @@ p {
 
 header {
     display: flex;
-    position: fixed;
+    position: absolute;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -92,7 +92,7 @@ header {
     gap: 5vw;
     background-color: var(--foreground-shade);
     color: var(--background-shade);
-    border-bottom: 3px solid var(--main-color);
+    /*border-bottom: 3px solid var(--main-color);*/
     font-size: 30px;
 }
 
@@ -102,6 +102,16 @@ header>div {
 
 #subtitle {
     font-size: 0.75em;
+}
+
+#header-border {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    margin-top: 60px;
+    height: 3px;
+    width: 100%;
+    background-color: var(--main-color);
 }
 
 /* >> MAIN */
