@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Daily Patristics</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    
+    <header>
+        <div id="logo"></div>
+        <div id="title">Daily Patristics</div>
+        <div id="subtitle"><em>Breviary sermons for the liturgical year</em></div>
+    </header>
+
+    <main>
+
+        <div id="request">
+            <h1>Find a patristic sermon or homily</h1>
+
+            <h2>Select a liturgical day from the proper of the time or the proper of the saints.</h2>
+            <p>Hit &lsquo;find texts&rsquo; to return the breviary homilies and sermons appointed for your chosen liturgical day, in English. You can also choose to show texts for the dead, or those of a particular common or the little office.</p>
+
+            <!--this form is the initial plan to get something that works fine.
+            In the future a cleaner, more flexible, more easily operable system would be nice.-->
+            <form action="" id="request-form">
+
+                <label for="temporale">Choose from the <em>temporal</em> cycle:</label>
+                <select name="temporale" id="temporale">
+                    <!--millions of <option>s here-->
+                </select><br>
+
+                <label for="sanctorale">Choose from the <em>sanctoral</em> cycle:</label>
+                <select name="sanctorale" id="sanctorale">
+                    <!--millions of <option>s here-->
+                </select><br>
+
+                <label for="other">Choose from the <em>commons and votives</em>:</label>
+                <select name="other" id="other">
+                    <option value="defunctorum">Office of the dead</option>
+                    <option value="parvum">Saturday office of the BVM</option>
+                    <option value="common-1">Vigil of a saint or saints</option>
+                    <!--13 more <option>s here-->
+                </select><br>
+
+                <button id="generate">Find texts</button>
+
+            </form>
+        </div>
+
+        <div id="result">
+
+            <!-- JS will generate a <p> stating number of texts found-->
+
+            <!--Then for each text found will be generated:
+                An <h1> with the sermon/homily title
+                a <p> stating the source of the text
+                <p>s with the text itself
+            -->
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
