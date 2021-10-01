@@ -1,14 +1,50 @@
 /* >> GENERAL: @imports, colour variables, and page styles */
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Sorts+Mill+Goudy:ital@0;1&display=swap');
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --foreground-shade: #f6efed;
+        --accent: #df7c74;
+        --main-color: #c44444;
+        --background-shade: #221c23;
+    }
+
+    option, select {
+        color: var(--background-shade);
+    }
+}
+    
+@media (prefers-color-scheme: light) {
+    :root {
+        --background-shade: #f6efed;
+        --accent: #df7c74;
+        --main-color: #c44444;
+        --foreground-shade: #221c23;
+    }
+
+    select, option, button {
+        color: inherit;
+    }
+}
+
+@media (prefers-contrast: more) {
+    :root {
+        --background-shade: #fff;
+        --accent: #ff0;
+        --main-color: #f00;
+        --foreground-shade: #000;
+    }
+
+    select, option, button {
+        color: inherit;
+    }
+}
+
 :root {
     font-family: 'Cormorant Garamond', Garamond, serif;
     font-size: 20px;
     line-height: 1.2em;
-    --background-shade: #f6f4f3;
-    --accent: #df7c74;
-    --main-color: #c44444;
-    --foreground-shade: #221c23;
 }
 
 body {
@@ -57,11 +93,15 @@ header {
     background-color: var(--foreground-shade);
     color: var(--background-shade);
     border-bottom: 3px solid var(--main-color);
-    font-size: 25px;
+    font-size: 30px;
 }
 
 header>div {
     padding: 5px;
+}
+
+#subtitle {
+    font-size: 0.75em;
 }
 
 /* >> MAIN */
@@ -70,9 +110,9 @@ main {
     margin-top: 95px;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 55%;
     min-width: 240px;
-    max-width: 1500px;
+    max-width: 1000px;
 }
 
 #request>h1 {
@@ -82,7 +122,6 @@ main {
 }
 
 select,option,button {
-    color: inherit;
     font-family: inherit;
     font-size: inherit;
 }
