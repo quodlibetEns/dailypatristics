@@ -18,13 +18,44 @@
     </header>
     <div id="header-border"></div>
 
-    <main>
+    <div id="appearance-mini" onclick="showOptions()">Appearance options, for comfortable reading</div>
+
+    <div id="appearance-menu">
+        <div id="appearance-menu-title" onclick="hideOptions()">Appearance options, for comfortable reading</div>
+        
+        <div class="menu-group">
+            <div class="menu-group-title no-border">Colours</div>
+            <div class="menu-items-container tripartite">
+                <div class="appearance-menu-item" id="light-theme" onclick="changeTheme('light')">Dark on light</div>
+                <div class="appearance-menu-item" id="dark-theme" onclick="changeTheme('dark')">Light on dark</div>
+                <div class="appearance-menu-item" id="contrast-theme" onclick="changeTheme('contrast')">High contrast</div>
+            </div>
+        </div>
+        
+        <div class="menu-group">
+            <div class="menu-group-title">Typeface</div>
+            <div class="menu-items-container bipartite">
+                <div class="appearance-menu-item" id="serif-typeface" onclick="serif()">Serif</div>
+                <div class="appearance-menu-item" id="sans-typeface" onclick="sans()">Sans-serif</div>
+            </div>
+        </div>
+        
+        <div class="menu-group">
+            <div class="menu-group-title">Font size</div>
+            <div class="menu-items-container bipartite">
+                <div class="appearance-menu-item" id="standard-size" onclick="normalSize()">Standard</div>
+                <div class="appearance-menu-item" id="large-size" onclick="largeSize()">Large</div>
+            </div>
+        </div>
+    </div>
+
+    <main id="main">
 
         <section id="request">
             <h1>Read a patristic sermon or homily</h1>
 
             <h2>Select a liturgical day from the proper of the time or the proper of the saints.</h2>
-            <p>Hit &lsquo;find texts&rsquo; to return the breviary homilies and sermons appointed for your chosen liturgical day, in English. You can also choose to show texts for the dead, or those of a particular common or the little office. Searches for saints' days will also return any associated legend or historical lesson.</p>
+            <p>Hit &lsquo;find texts&rsquo; to return the breviary homilies and sermons appointed for your chosen liturgical day, in English. You can also choose to show texts for the dead, or those of a particular common or the little office. Searches for saints&rsquo; days will also return any associated legend or historical lesson.</p>
 
             <!--this form is the initial plan to get something that works fine.
             In the future a cleaner, more flexible, more easily operable system would be nice.-->
