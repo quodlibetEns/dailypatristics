@@ -1,0 +1,173 @@
+{
+    "advent-1": {
+        "name": "Advent I",
+        "has-legend": false,
+        "has-sermon": true,
+        "sermon": {
+            "author": "leo",
+            "title-en": "From a Sermon by St. Leo the Pope",
+            "title-la": "Sermo 8 de jejunio decimi mensis et eleemosynis",
+            "text-1": "",
+            "text-2": "",
+            "text-3": ""
+        },
+        "has-homily": true,
+        "homily": {
+            "pericope": {
+                "gospel": "Mt",
+                "chapter": 21,
+                "verse": 1
+            },
+            "author": "various",
+            "title-en": "A Homily from divers sources",
+            "title-la": "Periphrasis ex diversis auctoribus",
+            "text-1": "",
+            "text-2": "",
+            "text-3": ""
+        }
+    },
+
+    "advent-2": {
+        "name": "Advent II",
+        "has-legend": false,
+        "has-sermon": true,
+        "sermon": {
+            "author": "jerome",
+            "title-en": "From the Exposition of the Prophet Isaiah by St. Jerome the Priest",
+            "title-la": "Lib. 4 in cap. 11 Isaiae",
+            "text-1": "",
+            "text-2": "",
+            "text-3": ""
+        },
+        "has-homily": true,
+        "homily": {
+            "pericope": {
+                "gospel": "Lk",
+                "chapter": 21,
+                "verse": 25
+            },
+            "author": "gregory",
+            "title-en": "A Homily by St. Gregory the Pope",
+            "title-la": "Homilia I in Evangelia",
+            "text-1": "",
+            "text-2": "",
+            "text-3": ""
+        }
+    },
+
+    "advent-3": {
+        "name": "Advent III",
+        "has-legend": false,
+        "has-sermon": true,
+        "sermon": {
+            "author": "leo",
+            "title-en": "From a Sermon by St. Leo the Pope",
+            "title-la": "Sermo 2 de jejunio decimi mensis et collectis",
+            "text-1": "",
+            "text-2": "",
+            "text-3": ""
+        },
+        "has-homily": true,
+        "homily": {
+            "pericope": {
+                "gospel": "Mt",
+                "chapter": 11,
+                "verse": 2
+            },
+            "author": "",
+            "title-en": "",
+            "title-la": "",
+            "text-1": "",
+            "text-2": "",
+            "text-3": ""
+        }
+    },
+
+    "advent-ember-wed": {
+        "name": "Ember Wednesday in Advent",
+        "has-legend": false,
+        "has-sermon": false,
+        "has-homily": true,
+        "homily": {
+            "pericope": {
+                "gospel": "Lk",
+                "chapter": 1,
+                "verse": 26
+            },
+            "author": "ambrose",
+            "title-en": "A Homily by St. Ambrose the Bishop",
+            "title-la": "Lib. 2 in Lucam",
+            "text-1": "",
+            "text-2": "",
+            "text-3": ""
+        }
+    },
+
+    "advent-ember-fri": {
+        "name": "Ember Friday in Advent",
+        "has-legend": false,
+        "has-sermon": false,
+        "has-homily": true,
+        "homily": {
+            "pericope": {
+                "gospel": "Lk",
+                "chapter": 1,
+                "verse": 39
+            },
+            "author": "ambrose",
+            "title-en": "A Homily by St. Ambrose the Bishop",
+            "title-la": "Lib. 2 in Luc. cap. 1 post initium",
+            "text-1": "",
+            "text-2": "",
+            "text-3": ""
+        }
+    },
+
+    "advent-ember-sat": {
+        "name": "Ember Saturday in Advent",
+        "has-legend": false,
+        "has-sermon": false,
+        "has-homily": true,
+        "homily": {
+            "pericope": {
+                "gospel": "Lk",
+                "chapter": 3,
+                "verse": 1
+            },
+            "author": "gregory",
+            "title-en": "A Homily by St. GRegory the Pope",
+            "title-la": "Homilia 20 in Evang.",
+            "text-1": "",
+            "text-2": "",
+            "text-3": ""
+        }
+    },
+
+    "advent-4": {
+        "name": "Advent IV",
+        "has-legend": false,
+        "has-sermon": true,
+        "sermon": {
+            "author": "leo",
+            "title-en": "From a Sermon by St. Leo the Pope",
+            "title-la": "Sermo de jejunio decimi mensis et collectis",
+            "text-1": "",
+            "text-2": "",
+            "text-3": ""
+        },
+        "has-homily": true,
+        "homily": {
+            "pericope": {
+                "gospel": "Jn",
+                "chapter": 1,
+                "verse": 19
+            },
+            "author": "gregory",
+            "title-en": "A Homily by St. Gregory the Pope",
+            "title-la": "Homilia 7 in Evang.",
+            "text-1": "",
+            "text-2": "",
+            "text-3": ""
+        }
+    }
+}

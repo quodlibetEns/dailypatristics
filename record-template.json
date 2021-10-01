@@ -1,0 +1,37 @@
+{
+"advent-3": {
+    "name": "",
+    "has-legend": true,
+    "legend": {
+        "author": false,
+        "title-en": false,
+        "title-la": false,
+        "text-1": "",
+        "text-2": "",
+        "text-3": ""
+    },
+    "has-sermon": true,
+    "sermon": {
+        "author": "",
+        "title-en": "",
+        "title-la": "",
+        "text-1": "",
+        "text-2": "",
+        "text-3": ""
+    },
+    "has-homily": true,
+    "homily": {
+        "pericope": {
+            "gospel": "",
+            "chapter": 1,
+            "verse": 1
+        },
+        "author": "",
+        "title-en": "",
+        "title-la": "",
+        "text-1": "",
+        "text-2": "",
+        "text-3": ""
+    }
+}
+}
