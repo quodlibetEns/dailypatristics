@@ -1,3 +1,11 @@
+// PROCESSING USER INPUT
+
+// BACKEND - FETCHING TEXTS
+
+// DOM MANIPULATION: DISPLAYING TEXTS
+
+// DOM MANIPULATION: APPEARANCE CONTROLS
+
 function showOptions() {
     document.getElementById("appearance-mini").style.display = "none";
     document.getElementById("appearance-menu").style.display = "block";
