@@ -18,20 +18,45 @@ bvm, defunctorum
 
 const bins = [
     "https://api.jsonbin.io/b/6157afa04a82881d6c594822"
+    // ...
+]
+
+const validRecords = [
+    "advent-", "natepi-", "prelent-", "lent-", "passion-", "easter-", "ttoc-", "t1dated-", "t1num-", "t2-",
+    "certain-",
+    "jan-", "feb-", "mar-", "apr-", "may-", "jun-", "jul-", "aug-", "sep-", "oct-", "nov-", "dec-",
+    "com1-", "com2-", "com3-", "com4-", "com5-", "com6-", "com7-", "com8-", "com9-", "com10-", "com11-", "com12-", "com13-", "com14-",
+    "bvm-", "defunctorum-"
 ]
 
 function whichRecord (occasion) {
-    /*using regex (probably?), and a switch,
-    return the index of bins[] corresponding to the correct record for the occasion.*/
+    let query = /^\D*?-/;
+    let result = query.exec(occasion);
+    if (result == null) {
+        throw new Error ('An invalid occasion-name string was used. Occasion names must start with the relevant record code followed by a hyphen (e.g. "advent-")');
+    }
+    for (i = 0; i < validRecords.length; i++) {
+        if (result[0] == validRecords[i]) {
+            return i;
+        } else {
+            continue;
+        }
+    }
+    throw new Error ('An invalid occasion-name string was used. Occasion names must start with the relevant record code followed by a hyphen (e.g. "advent-")');
 }
 
+var retrievedData = [];
+
 function fetchTexts (occasion) {
-    // check which record to retrieve for this occasion
     let record = whichRecord(occasion);
 
     fetch(bins[record])
-        .then(response => response.json())
-        .then(data => console.log(data)); //change to return data
+        .then (
+            response => response.json()
+                .then (
+                    data => {retrievedData = data}
+                )
+        )
 }
 
 // PROCESSING THE RETRIEVED DATA
@@ -62,9 +87,6 @@ function findTexts (selectId) {
     occasion = document.getElementById(selectId).value;
     printResults(occasion);
 }
-
-
-
 
 // DOM MANIPULATION: APPEARANCE CONTROLS
 
