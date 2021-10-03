@@ -122,7 +122,7 @@ header>div {
 
 #appearance-mini {
     display: block;
-    padding: 5px;
+    padding: 10px 5px;
     cursor: pointer;
 }
 
@@ -138,6 +138,7 @@ header>div {
     font-size: 0.8rem;
     line-height: 1em;
     text-align: center;
+    padding: 5px;
 }
 
 #appearance-menu {
@@ -149,7 +150,7 @@ header>div {
 }
 
 #appearance-menu>div {
-    padding: 10px 5px;
+    padding: 10px;
 }
 
 .menu-group {
@@ -243,9 +244,25 @@ main {
     text-decoration-thickness: 3px;
 }
 
-select,option,button {
+form {
+    line-height: 2.5em;
+    border-left: 3px solid var(--main-color);
+    padding-left: 5%;
+}
+
+select,button {
     font-family: inherit;
     font-size: inherit;
+    box-sizing: border-box;
+    margin: 0px 5px;
+}
+
+select {
+    border: 1px solid var(--main-color);
+    border-radius: 0.2em;
+    background-color: var(--background-shade);
+    color: var(--foreground-shade);
+    padding: 2px;
 }
 
 #generate {
