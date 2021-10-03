@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>About - Daily Patristics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo"></div>
+        <div id="title">Daily Patristics</div>
+        <div id="subtitle"><em>Breviary sermons for the liturgical year</em></div>
+    </header>
+    <div id="header-border"></div>
+
+    <main id="main">
+
+        <p>Jump to: 
+            <a href="#about">About the site</a> | 
+            <a href="#reuse">Licensing and technical information</a> | 
+            <a href="#privacy">Privacy</a> | 
+            <a href="#contact">Contact me</a> | 
+            <a href="#credits">Credits</a>
+        </p>
+        
+        <h1 id="about">About this site</h1>
+            <p>Daily Patristics is site that allows you to read translations of the sermons and homilies of the Church Fathers, as well as legends of saints, largely from the Roman Breviary and all translated into English.</p>
+            <p>All the texts currently used on the site come from the <em>Anglican Breviary</em>, which is a breviary that largely translates the Roman Breviary (1911 rubrics) into an Anglican English idiom, imitating and re-using the language of the Book of Common Prayer of 1662. If you'd like to find out more about the Anglican Breviary or order your own copy, take a look at <a href="https://www.anglicanbreviary.net">the Anglican Breviary site</a>.</p>
+            <p>This isn't a professional site; just a passion project, created for my own enjoyment, to practice web development, and just in case anyone else wanted the same thing. One consequence of my limited time (and ability) is that the site may well not work on older browsers. If you encounter any errors on a modern browser, I would be grateful if you would <a href="#contact">contact me</a> to let me know.</p>
+
+        <h1 id="reuse">Licensing and source code</h1>
+            <p>Daily Patristics is an open source project. If you'd like to, you are encouraged to make your own things with our code or data.</p>
+            <h2>License</h2>
+                <p>This site, its source, and its contents, are licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.txt">GNU General Public License version 3.0</a> or later. In a nutshell, this means you can do what you like with it, as long as you make the source code available, retain this same license, and say what you've changed.</p>
+            <h2>The source code</h2>
+                <p>The full source code for this project is available in its <a href="https://github.com/quodlibetEns/dailypatristics">GitHub repository</a>. Please feel free to make a fork of the project there, too.</p>
+            <h2>The texts themselves</h2>
+                <p>The texts used on Daily Patristics are stored, along with some information about them, in JSON files, up-to-date copies of which are available in the 'texts' directory of our <a href="https://github.com/quodlibetEns/dailypatristics">GitHub repository</a>. (JSON is a format for storing information that is readable for both humans and computers.) Information about how to use these JSON records in your own project, including through a public API, is under the following heading.</p>
+                <p>The <em>Anglican Breviary</em>, and these texts within it, are not the subject of any claim to copyright, to the best of my knowledge and after reasonable enquiries. The JSON files in this project contain versions of those texts digitised especially for Digital Patristics. The files are licensed under the same GPL3 license as the rest of the project. My conclusion is that although the texts themselves are not subject to any kind of restriction, the version and form of the texts provided here are subject to the provisions of that license. However, I'm not an intellectual property lawyer, so you may come to your own conclusions. Either way, you have wide re-use rights, and I would love to see these digitised texts put to use elsewhere.</p>
+            <h2>Technical FAQ: accessing the texts data</h2>
+                <details>
+                    <summary>Are the texts exactly as they are found in the <em>Anglican Breviary</em>?</summary>
+                    <p>Not exactly. The texts have been digitised using consumer-available optical character recognition, then subject to a brief manual proof-reading process to correct any obvious errors. Some errors probably remain, however, as stringent proof-reading has yet to be undertaken. However, the aim is for the texts to identical to those printed in the breviary, with the exception that hyphenation where a word goes over a line-break has been removed.</p>
+                </details>
+                <details>
+                    <summary>What are the </summary>
+                </details>
+
+        <h1 id="privacy">Privacy</h1>
+            <p>Long story short, your data and privacy are safer here than on the vast majority of popular sites.</p>
+            <p>Daily Patristics does not collect any personal information from you whatever. In fact, it doesn't collect any data from you at all. Even data like what liturgical day you look up on the site, or what colour scheme you prefer, never leave your own machine. Similarly, it doesn't use any technologies that could be used to track you online - no cookies, no fingerprinting, no analytics. It doesn't serve you any advertising either.</p>
+            <p>Two external services are involved in bringing you this site, and they each have their own privacy policies. The first is <a href="https://www.github.com">GitHub</a>, who host this site through the GitHub Pages feature. Their <a href="https://docs.github.com/en/github/site-policy/github-privacy-statement">privacy policy</a> states: <q>GitHub may collect User Personal Information from visitors to your GitHub Pages website, including logs of visitor IP addresses, to comply with legal obligations, and to maintain the security and integrity of the Website and the Service.</q> The second service is <a href="https://jsonbin.io">JSONBin</a>, which is where Daily Patristics keeps the texts that you can read here. When you ask to be shown texts on this site, a request is sent to them to retrieve the data needed. JSONBin state in their <a href="https://jsonbin.io/privacy">privacy policy</a> that they store the <a href="https://en.wikipedia.org/wiki/IP_address">IP address</a> of every request they receive for security purposes. This is a standard practice that is necessary to this kind of operation.</p>
+            <p>Details of other services' privacy policies were correct when checked on October 3, 2021, but are provided for information only.</p>
+
+        <h1 id="contact">Contact</h1>
+            <p>If you've encountered an error, dead link, typo in a text, or something that doesn't work properly while using Daily Patristics, I'd be very grateful to hear about it so I can try to fix it. If you're comfortable <a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue">creating an issue on GitHub</a>, please do so on our <a href="https://github.com/quodlibetEns/dailypatristics">repository</a>. Otherwise, or if you want to get in touch about something else, you can write to <a href="mailto:quodlibetensdev@gmail.com">quodlibetensdev@gmail.com</a>.</p>
+
+        <h1 id="credits">Credits and acknowledgements</h1>
+            <p>Daily Patristics is the work of <a href="https://github.com/quodlibetEns">@quodlibetEns on GitHub</a>. Many thanks to Daniel Lula, reprinter and champion of the <a href="https://anglicanbreviary.net">Anglican Breviary</a>, for his help with an enquiry, and his efforts to preserve the traditional office in use.</p>
+
+    </main>
+</body>
+
+</html>
