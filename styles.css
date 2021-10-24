@@ -7,7 +7,7 @@
         --foreground-shade: #f6efed;
         --accent: #df7c74;
         --main-color: #c44444;
-        --background-shade: #221c23;
+        --background-shade: #261a28;
     }
 
     option, select {
@@ -20,7 +20,7 @@
         --background-shade: #f6efed;
         --accent: #df7c74;
         --main-color: #c44444;
-        --foreground-shade: #221c23;
+        --foreground-shade: #261a28;
     }
 
     select, option, button {
@@ -46,7 +46,7 @@
     font-size: 20px;
     line-height: 1.2em;
     --always-light: #f6efed;
-    --always-dark: #221c23;
+    --always-dark: #261a28;
 }
 
 body {
