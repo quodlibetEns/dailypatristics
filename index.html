@@ -49,6 +49,40 @@
         </div>
     </div>
 
+    <div id="appearance-widget" onclick="showPopUpMenu()">
+        <span style="font-size: 30px; line-height: 30px;">?</span><!--placeholder - needs an icon e.g. gear-->
+    </div>
+
+    <div id="pop-up-appearance-menu">
+        <div id="close-pop-up" onclick="hidePopUpMenu()">X</div>
+        <div id="appearance-menu-title">Appearance options, for comfortable reading</div>
+        
+        <div class="menu-group">
+            <div class="menu-group-title no-border">Colours</div>
+            <div class="menu-items-container tripartite">
+                <div class="appearance-menu-item" id="light-theme" onclick="changeTheme('light')">Dark on light</div>
+                <div class="appearance-menu-item" id="dark-theme" onclick="changeTheme('dark')">Light on dark</div>
+                <div class="appearance-menu-item" id="contrast-theme" onclick="changeTheme('contrast')">High contrast</div>
+            </div>
+        </div>
+        
+        <div class="menu-group">
+            <div class="menu-group-title">Typeface</div>
+            <div class="menu-items-container bipartite">
+                <div class="appearance-menu-item" id="serif-typeface" onclick="serif()">Serif</div>
+                <div class="appearance-menu-item" id="sans-typeface" onclick="sans()">Sans-serif</div>
+            </div>
+        </div>
+        
+        <div class="menu-group">
+            <div class="menu-group-title">Font size</div>
+            <div class="menu-items-container bipartite">
+                <div class="appearance-menu-item" id="standard-size" onclick="normalSize()">Standard</div>
+                <div class="appearance-menu-item" id="large-size" onclick="largeSize()">Large</div>
+            </div>
+        </div>
+    </div>
+
     <main id="main">
 
         <section id="request">

@@ -11,7 +11,7 @@ function hideOptions() {
 const root = document.querySelector(':root');
 
 function changeTheme (theme) {
-    let l = '#221c23';
+    let l = '#261a28';
     let d = '#f6efed';
     switch (theme) {
         case "light":
@@ -45,4 +45,14 @@ function normalSize() {
 function largeSize() {
     document.getElementById('main').style.fontSize = "1.3rem";
     document.getElementById('main').style.lineHeight = "1.8em";
+}
+
+function showPopUpMenu() {
+    document.getElementById('main').style.filter = "blur(15px)";
+    document.getElementById('pop-up-appearance-menu').style.display = "block";
+}
+
+function hidePopUpMenu() {
+    document.getElementById('main').style.filter = "none";
+    document.getElementById('pop-up-appearance-menu').style.display = "none";
 }
