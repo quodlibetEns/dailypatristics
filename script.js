@@ -1,7 +1,7 @@
 // BACKEND - FETCHING TEXTS
 
 /* Texts and related information are stored in a number of JSON records
-In the order: 
+In the order: PROVISIONAL
 1. temporale
 advent, nativity-epiphany, prelent, lent, passiontide-holyweek, eastertide, trinity-to-corpus, trinity-part1-dated, trinity-part1-numbered, trinity-part2
 2. certain-movable
@@ -12,102 +12,53 @@ certain-moveable
 (comms 1-14)
 5. votives
 bvm, defunctorum
+
+for simplicity of fetchtexts function, each indivudal occasion has its own .json record; these are the grouped only broad section (temporale etc)
+This means that the minimal info passed to the function from the form (e.g. 'temporale', 'advent-1') is enough to generate a URI for the JSON directly
+
 */
 
-const validRecords = [
-    "advent-", "natepi-", "prelent-", "lent-", "passion-", "easter-", "ttoc-", "t1dated-", "t1num-", "t2-",
-    "certain-",
-    "jan-", "feb-", "mar-", "apr-", "may-", "jun-", "jul-", "aug-", "sep-", "oct-", "nov-", "dec-",
-    "com1-", "com2-", "com3-", "com4-", "com5-", "com6-", "com7-", "com8-", "com9-", "com10-", "com11-", "com12-", "com13-", "com14-",
-    "bvm-", "defunctorum-"
-]
-
-// validate occasion-name
-function validateRecord (occasion) {
-    console.log('validateRecord reports: has been called with param '+ occasion); //testing
-
-    let query = /^\D*?-/;
-    console.log("validateRecord reports: result = " + query.exec(occasion)); //testing
-
-    let result = query.exec(occasion);
-    if (result == null) {
-        throw new Error ('An invalid occasion-name string was used. Occasion names must start with the relevant record code followed by a hyphen (e.g. "advent-")');
-    } else {
-        console.log('validateRecord reports: returning status 1 to calling function'); //testing
-        return 1;
-    }
-    /*for (i = 0; i < validRecords.length; i++) {
-        if (result[0] == validRecords[i]) {
-            console.log('whichRecord reports: returning ' + i + ' to fetchTexts'); //testing
-            return i;
-        } else {
-            continue;
-        }
-    }
-    throw new Error ('An invalid occasion-name string was used. Occasion names must start with the relevant record code followed by a hyphen (e.g. "advent-")');*/
+function validateInput (section, occasion) {
+    //input validation to go here
+    return true; //for now
 }
-
-let retrievedData = [];
 
 function fetchTexts (section, occasion) {
     console.log('fetchTexts reports: has been called with param' + occasion); //testing
 
-    let valid = validateRecord(occasion);
-    console.log('fetchTexts reports: validateRecord called, returned ' + valid); //testing
+    if ( validateInput (section, occasion) ) {
+        console.log('fetchTexts reports: validateInput returned true, continuing'); //testing
 
-    if (valid == 1) {
+            let jsonUri = `https://dailypatristics.netlify.app/texts/${section}/${occasion}.json`;
+            console.log(jsonUri); //testing
 
-        let regex = /^\D*?-/;
-        let regexed = regex.exec(occasion)[0]; //get occasion as far as hyphen (.exec returns array, here only index of which is the result)
-        console.log(regexed); //testing
-        let dehyphenated = regexed.substring(0, regexed.length - 1); //occasion - hyphen, i.e. name of json file
-
-        let jsonUri = `https://dailypatristics.netlify.app/texts/${section}/${dehyphenated}.json`;
-        console.log(jsonUri); //testing
-
-        async function logJSONData() {
-            const response = await fetch(jsonUri); //needs to point to a web address for CORS reasons
-            const jsonData = await response.json();
-            console.log(jsonData);
+            async function logJSONData() {
+                const response = await fetch(jsonUri); //needs to point to a web address for CORS reasons
+                const jsonData = await response.json();
+                console.log(jsonData); //testing
+                return jsonData;
+            }
+            return logJSONData();
         }
-        logJSONData();
-          
-    }
+    // validation fail backstop
+    throw new Error('Input section and occasion were not valid');
+    
 }
-
-// PROCESSING THE RETRIEVED DATA
-
-/* call fetchTexts on (occasion)
-work out number of texts;
-create array for each texts within one big array;
-assign correct data to each array;
-return array. */
-
-// DOM MANIPULATION: DISPLAYING TEXTS
-
-function printResults(occasion) {
-    //get the array of arrays;
-    //prepare new dom elements accoridng to number of texts;
-    //populate new elements' text from arrays 
-
-    //testing
-    console.log('printResults reports: has been called');
-}
-
-// PROCESSING USER INPUT
 
 /* Later versions may include more complex input like dates.
 For now, input is guaranteed to be a unique occasion value corresponding eventually to a JSON object.*/
 
-let occasion = "";
-
 //called by the user clicking 'generate'
-function findTexts (selectId) {
-    occasion = document.getElementById(selectId).value; //occasion = the value of the box on which find texts was clicked, e.g. advent-1
-    console.log('findTexts reports: occasion is ' + occasion); //testing
-    fetchTexts(selectId, occasion);
-    console.log('findTexts reports: fetchTexts called with param ' + occasion); //testing
+function getResults (selectId) {
+    let occasion = document.getElementById(selectId).value; //occasion = the value of the box on which find texts was clicked, e.g. advent-1
+    console.log(`getResults reports: section is ${selectId}, occasion is ${occasion}`); //testing
+
+    let data = fetchTexts(selectId, occasion);
+    console.log(`getResults reports: fetchTexts called with params ${selectId} and ${occasion}, returned ${data}`); //testing
 }
+
+
+//============================================
 
 // DOM MANIPULATION: APPEARANCE CONTROLS
 
