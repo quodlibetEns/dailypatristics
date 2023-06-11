@@ -42,7 +42,7 @@
 }
 
 :root {
-    font-family: 'Cormorant Garamond', Garamond, serif;
+    font-family: 'Cormorant Garamond medium', Garamond, serif;
     font-size: 20px;
     line-height: 1.2em;
     --always-light: #f6efed;
@@ -72,7 +72,6 @@ h1 {
 
 h2 {
     font-style: italic;
-    font-family: 'Cormorant Garamond', Garamond, serif;
     font-size: 1.2rem;
     text-align: justify;
     line-height: 1.5em;
