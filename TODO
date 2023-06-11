@@ -1,0 +1,17 @@
+Fix anchors on buttons - hitting find texts should scroll to results
+Add scroll-to-top button (small, red, bottom right)
+Some nicer styling for results contents
+Consider difficulties caused by non-standard texts as they arise
+Check and fix mobile layout
+Work out how to OCR a ton of texts
+OCR, proof, format into JSON files, and integrate new texts/occasions
+Deal with issues arising from this with JS logic
+Make reading as comfortable as possible - consider texts, colours
+Consider aligning header items with page content
+Build out a nicer UI for selecting an occasion, particularly as more are added
+Add other ways to select an occasion, e.g. 'today' button, date picker (would require coding liturgical calendar), range of mutliple occasions
+Add option to include pericope in results
+
+Long term ideas:
+Mobile app
+Fill in extra texts from other sources
