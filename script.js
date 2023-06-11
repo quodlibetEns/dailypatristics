@@ -1,8 +1,6 @@
 // BACKEND - FETCHING TEXTS
 
 /* Texts and related information are stored in a number of JSON records
-Which are all publically available and hosted on jsonbin.io
-The array 'bins' stores the access urls for each record 
 In the order: 
 1. temporale
 advent, nativity-epiphany, prelent, lent, passiontide-holyweek, eastertide, trinity-to-corpus, trinity-part1-dated, trinity-part1-numbered, trinity-part2
@@ -15,11 +13,6 @@ certain-moveable
 5. votives
 bvm, defunctorum
 */
-
-const bins = [
-    "https://api.jsonbin.io/b/6157afa04a82881d6c594822"
-    // ...
-]
 
 const validRecords = [
     "advent-", "natepi-", "prelent-", "lent-", "passion-", "easter-", "ttoc-", "t1dated-", "t1num-", "t2-",
