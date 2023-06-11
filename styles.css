@@ -49,6 +49,16 @@
     --always-dark: #261a28;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
 body {
     background-color: var(--background-shade);
     margin: 0;
