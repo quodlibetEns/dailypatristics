@@ -38,6 +38,7 @@ function fetchTexts (section, occasion) {
                 console.log(jsonData); //testing
                 return jsonData;
             }
+            console.log(getJSONData());
             return getJSONData();
         }
     // validation fail backstop
