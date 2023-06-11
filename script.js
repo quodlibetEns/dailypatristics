@@ -56,7 +56,7 @@ function fetchTexts (occasion) {
     if (valid == 1) {
 
         async function logJSONData() {
-            const response = await fetch(""); //needs to point to a web address
+            const response = await fetch("https://dailypatristics.netlify.app/texts/temporale/advent.json"); //needs to point to a web address for CORS reasons
             const jsonData = await response.json();
             console.log(jsonData);
         }
