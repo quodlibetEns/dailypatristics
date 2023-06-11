@@ -76,7 +76,7 @@ async function getResults (selectId) {
 
     if (data.hasHomily) {
         newContent += `
-        <h4>${data.homily.titleEn}</h4>
+        <h3>${data.homily.titleEn}</h3>
         <h4>${data.homily.titleLa}</h4>
         <p>${data.homily.text1}</p>
         <p>${data.homily.text2}</p>

@@ -1,8 +1,8 @@
 {
     "name": "Ember Saturday in Advent",
-    "has-legend": false,
-    "has-sermon": false,
-    "has-homily": true,
+    "hasLegend": false,
+    "hasSermon": false,
+    "hasHomily": true,
     "homily": {
         "pericope": {
             "gospel": "Lk",
@@ -10,10 +10,10 @@
             "verse": 1
         },
         "author": "gregory",
-        "title-en": "A Homily by St. GRegory the Pope",
-        "title-la": "Homilia 20 in Evang.",
-        "text-1": "",
-        "text-2": "",
-        "text-3": ""
+        "titleEn": "A Homily by St. GRegory the Pope",
+        "titleLa": "Homilia 20 in Evang.",
+        "text1": "",
+        "text2": "",
+        "text3": ""
     }
 }

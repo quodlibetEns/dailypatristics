@@ -1,16 +1,16 @@
 {
     "name": "Advent IV",
-    "has-legend": false,
-    "has-sermon": true,
+    "hasLegend": false,
+    "hasSermon": true,
     "sermon": {
         "author": "leo",
-        "title-en": "From a Sermon by St. Leo the Pope",
-        "title-la": "Sermo de jejunio decimi mensis et collectis",
-        "text-1": "",
-        "text-2": "",
-        "text-3": ""
+        "titleEn": "From a Sermon by St. Leo the Pope",
+        "titleLa": "Sermo de jejunio decimi mensis et collectis",
+        "text1": "",
+        "text2": "",
+        "text3": ""
     },
-    "has-homily": true,
+    "hasHomily": true,
     "homily": {
         "pericope": {
             "gospel": "Jn",
@@ -18,10 +18,10 @@
             "verse": 19
         },
         "author": "gregory",
-        "title-en": "A Homily by St. Gregory the Pope",
-        "title-la": "Homilia 7 in Evang.",
-        "text-1": "",
-        "text-2": "",
-        "text-3": ""
+        "titleEn": "A Homily by St. Gregory the Pope",
+        "titleLa": "Homilia 7 in Evang.",
+        "text1": "",
+        "text2": "",
+        "text3": ""
     }
 }

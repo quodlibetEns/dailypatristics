@@ -1,8 +1,8 @@
 {
     "name": "Ember Wednesday in Advent",
-    "has-legend": false,
-    "has-sermon": false,
-    "has-homily": true,
+    "hasLegend": false,
+    "hasSermon": false,
+    "hasHomily": true,
     "homily": {
         "pericope": {
             "gospel": "Lk",
@@ -10,10 +10,10 @@
             "verse": 26
         },
         "author": "ambrose",
-        "title-en": "A Homily by St. Ambrose the Bishop",
-        "title-la": "Lib. 2 in Lucam",
-        "text-1": "",
-        "text-2": "",
-        "text-3": ""
+        "titleEn": "A Homily by St. Ambrose the Bishop",
+        "titleLa": "Lib. 2 in Lucam",
+        "text1": "",
+        "text2": "",
+        "text3": ""
     }
 }
