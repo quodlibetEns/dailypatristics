@@ -42,7 +42,7 @@
 }
 
 :root {
-    font-family: 'Cormorant Garamond medium', Garamond, serif;
+    font-family: 'Cormorant Garamond', Garamond, serif;
     font-size: 20px;
     line-height: 1.2em;
     --always-light: #f6efed;
@@ -318,4 +318,8 @@ select {
 #result {
     display: none;
     margin-top: 50px;
+}
+
+.title-en {
+    font-size: 1.5rem;
 }
