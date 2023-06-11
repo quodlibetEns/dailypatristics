@@ -58,8 +58,8 @@ async function getResults (selectId) {
 
     if (data.hasLegend) {
         newContent += `
-        <h3>${data.legend.titleEn}</h3>
-        <h4>${data.legend.titleLa}</h4>
+        <h3 class="title-en">${data.legend.titleEn}</h3>
+        <h4 class="title-la">${data.legend.titleLa}</h4>
         <p>${data.legend.text1}</p>
         <p>${data.legend.text2}</p>
         <p>${data.legend.text3}</p>`;
@@ -67,8 +67,8 @@ async function getResults (selectId) {
 
     if (data.hasSermon) {
         newContent += `
-        <h3>${data.sermon.titleEn}</h3>
-        <h4>${data.sermon.titleLa}</h4>
+        <h3 class="title-en">${data.sermon.titleEn}</h3>
+        <h4 class="title-la">${data.sermon.titleLa}</h4>
         <p>${data.sermon.text1}</p>
         <p>${data.sermon.text2}</p>
         <p>${data.sermon.text3}</p>`;
@@ -76,9 +76,9 @@ async function getResults (selectId) {
 
     if (data.hasHomily) {
         newContent += `
-        <h3>${data.homily.titleEn}</h3>
-        <h4>${data.homily.titleLa}</h4>
-        <h4>${data.homily.pericope.gospel}. ${data.homily.pericope.chapter}: ${data.homily.pericope.verse}</h4>
+        <h3 class="title-en">${data.homily.titleEn}</h3>
+        <h4 class="title-la">${data.homily.titleLa}</h4>
+        <h4 class="pericope">${data.homily.pericope.gospel}. ${data.homily.pericope.chapter}: ${data.homily.pericope.verse}</h4>
         <p>${data.homily.text1}</p>
         <p>${data.homily.text2}</p>
         <p>${data.homily.text3}</p>`;

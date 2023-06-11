@@ -1,6 +1,6 @@
 /* >> GENERAL: @imports, colour variables, and page styles */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Sorts+Mill+Goudy:ital@0;1&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500;1,700&family=Noto+Sans:wght@700&display=swap');
 
 @media (prefers-color-scheme: dark) {
     :root {
@@ -318,4 +318,5 @@ select {
 
 #result {
     display: none;
+    margin-top: 50px;
 }
