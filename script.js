@@ -56,14 +56,14 @@ async function getResults (selectId) {
     //check what texts there are, then print them
     let newContent = `<h2>${data.name}</h2>`;
 
-    if (data.has-legend) {
+    /*if (data.has-legend) {
         newContent += `
         <h3>${data.legend.title-en}</h3>
         <h4>${data.legend.title-la}</h4>
         <p>${data.legend.text-1}</p>
         <p>${data.legend.text-2}</p>
         <p>${data.legend.text-3}</p>`;
-    }
+    }*/
 
     if (data.has-sermon) {
         newContent += `
