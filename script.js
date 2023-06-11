@@ -58,7 +58,7 @@ async function getResults (selectId) {
     let data = await fetchTexts(selectId, occasion); // returns an object
     console.log(`getResults reports: fetchTexts called with params ${selectId} and ${occasion}, returned ${data}`); //testing
 
-    console.log(data);
+    console.log(data.name);
 }
 
 
