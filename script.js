@@ -57,7 +57,7 @@ async function getResults (selectId) {
 
     document.getElementById('result').innerHTML = `<h1>${data.name}</h1>`; //etc
  
-    document.getElementById('result').style.display = block; //make results area visible once generated
+    document.getElementById('result').style.display = "block"; //make results area visible once generated
 }
 
 
