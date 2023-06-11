@@ -56,7 +56,7 @@ function getResults (selectId) {
     let data = fetchTexts(selectId, occasion); // returns an object
     console.log(`getResults reports: fetchTexts called with params ${selectId} and ${occasion}, returned ${data}`); //testing
 
-    console.log(data.name);
+    console.log(data);
 }
 
 
