@@ -38,9 +38,7 @@ async function fetchTexts (section, occasion) {
                 console.log(jsonData); //testing
                 return jsonData;
             }
-            let returnedData = await getJSONData();
-            console.log(returnedData);
-            return returnedData;
+            return await getJSONData();
         }
     // validation fail backstop
     throw new Error('Input section and occasion were not valid');
