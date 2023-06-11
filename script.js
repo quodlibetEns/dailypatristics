@@ -23,7 +23,7 @@ function validateInput (section, occasion) {
     return true; //for now
 }
 
-function fetchTexts (section, occasion) {
+async function fetchTexts (section, occasion) {
     console.log('fetchTexts reports: has been called with param' + occasion); //testing
 
     if ( validateInput (section, occasion) ) {
