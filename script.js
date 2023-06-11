@@ -51,11 +51,11 @@ async function fetchTexts (section, occasion) {
 For now, input is guaranteed to be a unique occasion value corresponding eventually to a JSON object.*/
 
 //called by the user clicking 'generate'
-function getResults (selectId) {
+async function getResults (selectId) {
     let occasion = document.getElementById(selectId).value; //occasion = the value of the box on which find texts was clicked, e.g. advent-1
     console.log(`getResults reports: section is ${selectId}, occasion is ${occasion}`); //testing
 
-    let data = fetchTexts(selectId, occasion); // returns an object
+    let data = await fetchTexts(selectId, occasion); // returns an object
     console.log(`getResults reports: fetchTexts called with params ${selectId} and ${occasion}, returned ${data}`); //testing
 
     console.log(data);
