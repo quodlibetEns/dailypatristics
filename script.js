@@ -24,9 +24,11 @@ const validRecords = [
 
 // validate occasion-name
 function validateRecord (occasion) {
-    console.log('whichRecord reports: has been called with param '+ occasion); //testing
+    console.log('validateRecord reports: has been called with param '+ occasion); //testing
 
     let query = /^\D*?-/;
+    console.log("validateRecord reports: result = " + query.exec(occasion)); //testing
+
     let result = query.exec(occasion);
     if (result == null) {
         throw new Error ('An invalid occasion-name string was used. Occasion names must start with the relevant record code followed by a hyphen (e.g. "advent-")');
@@ -47,7 +49,7 @@ function validateRecord (occasion) {
 
 let retrievedData = [];
 
-function fetchTexts (occasion) {
+function fetchTexts (section, occasion) {
     console.log('fetchTexts reports: has been called with param' + occasion); //testing
 
     let valid = validateRecord(occasion);
@@ -55,8 +57,16 @@ function fetchTexts (occasion) {
 
     if (valid == 1) {
 
+        let regex = /^\D*?-/;
+        let regexed = regex.exec(occasion)[0]; //get occasion as far as hyphen (.exec returns array, here only index of which is the result)
+        console.log(regexed); //testing
+        let dehyphenated = regexed.substring(0, regexed.length - 1); //occasion - hyphen, i.e. name of json file
+
+        let jsonUri = `https://dailypatristics.netlify.app/texts/${section}/${dehyphenated}.json`;
+        console.log(jsonUri); //testing
+
         async function logJSONData() {
-            const response = await fetch("https://dailypatristics.netlify.app/texts/temporale/advent.json"); //needs to point to a web address for CORS reasons
+            const response = await fetch(jsonUri); //needs to point to a web address for CORS reasons
             const jsonData = await response.json();
             console.log(jsonData);
         }
@@ -95,7 +105,7 @@ let occasion = "";
 function findTexts (selectId) {
     occasion = document.getElementById(selectId).value; //occasion = the value of the box on which find texts was clicked, e.g. advent-1
     console.log('findTexts reports: occasion is ' + occasion); //testing
-    fetchTexts(occasion);
+    fetchTexts(selectId, occasion);
     console.log('findTexts reports: fetchTexts called with param ' + occasion); //testing
 }
 
