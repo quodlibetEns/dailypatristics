@@ -315,3 +315,7 @@ select {
     color: var(--background-shade);
     font-weight: bold;
 }
+
+#result {
+    display: none;
+}

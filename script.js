@@ -24,18 +24,16 @@ function validateInput (section, occasion) {
 }
 
 async function fetchTexts (section, occasion) {
-    console.log('fetchTexts reports: has been called with param' + occasion); //testing
 
     if ( validateInput (section, occasion) ) {
         console.log('fetchTexts reports: validateInput returned true, continuing'); //testing
 
             let jsonUri = `https://dailypatristics.netlify.app/texts/${section}/${occasion}.json`;
-            console.log(jsonUri); //testing
+            console.log('fetchTexts reports that jsonUri is ' + jsonUri); //testing
 
             async function getJSONData() {
                 const response = await fetch(jsonUri); //needs to point to a web address for CORS reasons
                 const jsonData = await response.json();
-                console.log(jsonData); //testing
                 return jsonData;
             }
             return await getJSONData();
@@ -50,13 +48,16 @@ For now, input is guaranteed to be a unique occasion value corresponding eventua
 
 //called by the user clicking 'generate'
 async function getResults (selectId) {
-    let occasion = document.getElementById(selectId).value; //occasion = the value of the box on which find texts was clicked, e.g. advent-1
-    console.log(`getResults reports: section is ${selectId}, occasion is ${occasion}`); //testing
 
+    let occasion = document.getElementById(selectId).value; //occasion = the value of the box on which find texts was clicked, e.g. advent-1
     let data = await fetchTexts(selectId, occasion); // returns an object
     console.log(`getResults reports: fetchTexts called with params ${selectId} and ${occasion}, returned ${data}`); //testing
 
-    console.log(data.name);
+    //needs to check what texts there are, then print them
+
+    document.getElementById('result').innerHTML = `<h1>${data.name}</h1>`; //etc
+ 
+    document.getElementById('result').style.display = block; //make results area visible once generated
 }
 
 
