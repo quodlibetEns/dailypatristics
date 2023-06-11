@@ -22,34 +22,47 @@ const validRecords = [
     "bvm-", "defunctorum-"
 ]
 
-function whichRecord (occasion) {
+// validate occasion-name
+function validateRecord (occasion) {
+    console.log('whichRecord reports: has been called with param '+ occasion); //testing
+
     let query = /^\D*?-/;
     let result = query.exec(occasion);
     if (result == null) {
         throw new Error ('An invalid occasion-name string was used. Occasion names must start with the relevant record code followed by a hyphen (e.g. "advent-")');
+    } else {
+        console.log('validateRecord reports: returning status 1 to calling function'); //testing
+        return 1;
     }
-    for (i = 0; i < validRecords.length; i++) {
+    /*for (i = 0; i < validRecords.length; i++) {
         if (result[0] == validRecords[i]) {
+            console.log('whichRecord reports: returning ' + i + ' to fetchTexts'); //testing
             return i;
         } else {
             continue;
         }
     }
-    throw new Error ('An invalid occasion-name string was used. Occasion names must start with the relevant record code followed by a hyphen (e.g. "advent-")');
+    throw new Error ('An invalid occasion-name string was used. Occasion names must start with the relevant record code followed by a hyphen (e.g. "advent-")');*/
 }
 
-var retrievedData = [];
+let retrievedData = [];
 
 function fetchTexts (occasion) {
-    let record = whichRecord(occasion);
+    console.log('fetchTexts reports: has been called with param' + occasion); //testing
 
-    fetch(bins[record])
-        .then (
-            response => response.json()
-                .then (
-                    data => {retrievedData = data}
-                )
-        )
+    let valid = validateRecord(occasion);
+    console.log('fetchTexts reports: validateRecord called, returned ' + valid); //testing
+
+    if (valid == 1) {
+
+        async function logJSONData() {
+            const response = await fetch(""); //needs to point to a web address
+            const jsonData = await response.json();
+            console.log(jsonData);
+        }
+        logJSONData();
+          
+    }
 }
 
 // PROCESSING THE RETRIEVED DATA
@@ -62,23 +75,28 @@ return array. */
 
 // DOM MANIPULATION: DISPLAYING TEXTS
 
-/* function printResults(occasion)
-get the array of arrays;
-prepare new dom elements accoridng to number of texts;
-populate new elements' text from arrays 
-[this is the output function] */
+function printResults(occasion) {
+    //get the array of arrays;
+    //prepare new dom elements accoridng to number of texts;
+    //populate new elements' text from arrays 
+
+    //testing
+    console.log('printResults reports: has been called');
+}
 
 // PROCESSING USER INPUT
 
 /* Later versions may include more complex input like dates.
 For now, input is guaranteed to be a unique occasion value corresponding eventually to a JSON object.*/
 
-var occasion = "";
+let occasion = "";
 
 //called by the user clicking 'generate'
 function findTexts (selectId) {
-    occasion = document.getElementById(selectId).value;
-    printResults(occasion);
+    occasion = document.getElementById(selectId).value; //occasion = the value of the box on which find texts was clicked, e.g. advent-1
+    console.log('findTexts reports: occasion is ' + occasion); //testing
+    fetchTexts(occasion);
+    console.log('findTexts reports: fetchTexts called with param ' + occasion); //testing
 }
 
 // DOM MANIPULATION: APPEARANCE CONTROLS
