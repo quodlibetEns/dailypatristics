@@ -56,31 +56,31 @@ async function getResults (selectId) {
     //check what texts there are, then print them
     let newContent = `<h2>${data.name}</h2>`;
 
-    /*if (data.has-legend) {
+    if (data.hasLegend) {
         newContent += `
-        <h3>${data.legend.title-en}</h3>
-        <h4>${data.legend.title-la}</h4>
-        <p>${data.legend.text-1}</p>
-        <p>${data.legend.text-2}</p>
-        <p>${data.legend.text-3}</p>`;
-    }*/
-
-    if (data.has-sermon) {
-        newContent += `
-        <h3>${data.sermon.title-en}</h3>
-        <h4>${data.sermon.title-la}</h4>
-        <p>${data.sermon.text-1}</p>
-        <p>${data.sermon.text-2}</p>
-        <p>${data.sermon.text-3}</p>`;
+        <h3>${data.legend.titleEn}</h3>
+        <h4>${data.legend.titleLa}</h4>
+        <p>${data.legend.text1}</p>
+        <p>${data.legend.text2}</p>
+        <p>${data.legend.text3}</p>`;
     }
 
-    if (data.has-homily) {
+    if (data.hasSermon) {
         newContent += `
-        <h4>${data.homily.title-en}</h4>
-        <h4>${data.homily.title-la}</h4>
-        <p>${data.homily.text-1}</p>
-        <p>${data.homily.text-2}</p>
-        <p>${data.homily.text-3}</p>`;
+        <h3>${data.sermon.titleEn}</h3>
+        <h4>${data.sermon.titleLa}</h4>
+        <p>${data.sermon.text1}</p>
+        <p>${data.sermon.text2}</p>
+        <p>${data.sermon.text3}</p>`;
+    }
+
+    if (data.hasHomily) {
+        newContent += `
+        <h4>${data.homily.titleEn}</h4>
+        <h4>${data.homily.titleLa}</h4>
+        <p>${data.homily.text1}</p>
+        <p>${data.homily.text2}</p>
+        <p>${data.homily.text3}</p>`;
     }
 
     document.getElementById('result').innerHTML = newContent;
