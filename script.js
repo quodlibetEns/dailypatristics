@@ -53,9 +53,37 @@ async function getResults (selectId) {
     let data = await fetchTexts(selectId, occasion); // returns an object
     console.log(`getResults reports: fetchTexts called with params ${selectId} and ${occasion}, returned ${data}`); //testing
 
-    //needs to check what texts there are, then print them
+    //check what texts there are, then print them
+    let newContent = `<h2>${data.name}</h2>`;
 
-    document.getElementById('result').innerHTML = `<h1>${data.name}</h1>`; //etc
+    if (data.has-legend) {
+        newContent += `
+        <h3>${data.legend.title-en}</h3>
+        <h4>${data.legend.title-la}</h4>
+        <p>${data.legend.text-1}</p>
+        <p>${data.legend.text-2}</p>
+        <p>${data.legend.text-3}</p>`;
+    }
+
+    if (data.has-sermon) {
+        newContent += `
+        <h3>${data.sermon.title-en}</h3>
+        <h4>${data.sermon.title-la}</h4>
+        <p>${data.sermon.text-1}</p>
+        <p>${data.sermon.text-2}</p>
+        <p>${data.sermon.text-3}</p>`;
+    }
+
+    if (data.has-homily) {
+        newContent += `
+        <h4>${data.homily.title-en}</h4>
+        <h4>${data.homily.title-la}</h4>
+        <p>${data.homily.text-1}</p>
+        <p>${data.homily.text-2}</p>
+        <p>${data.homily.text-3}</p>`;
+    }
+
+    document.getElementById('result').innerHTML = newContent;
  
     document.getElementById('result').style.display = "block"; //make results area visible once generated
 }
