@@ -32,13 +32,13 @@ function fetchTexts (section, occasion) {
             let jsonUri = `https://dailypatristics.netlify.app/texts/${section}/${occasion}.json`;
             console.log(jsonUri); //testing
 
-            async function logJSONData() {
+            async function getJSONData() {
                 const response = await fetch(jsonUri); //needs to point to a web address for CORS reasons
                 const jsonData = await response.json();
                 console.log(jsonData); //testing
                 return jsonData;
             }
-            return logJSONData();
+            return getJSONData();
         }
     // validation fail backstop
     throw new Error('Input section and occasion were not valid');
@@ -53,8 +53,10 @@ function getResults (selectId) {
     let occasion = document.getElementById(selectId).value; //occasion = the value of the box on which find texts was clicked, e.g. advent-1
     console.log(`getResults reports: section is ${selectId}, occasion is ${occasion}`); //testing
 
-    let data = fetchTexts(selectId, occasion);
+    let data = fetchTexts(selectId, occasion); // returns an object
     console.log(`getResults reports: fetchTexts called with params ${selectId} and ${occasion}, returned ${data}`); //testing
+
+    console.log(data.name);
 }
 
 
