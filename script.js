@@ -78,6 +78,7 @@ async function getResults (selectId) {
         newContent += `
         <h3>${data.homily.titleEn}</h3>
         <h4>${data.homily.titleLa}</h4>
+        <h4>${data.homily.pericope.gospel}. ${data.homily.pericope.chapter}: ${data.homily.pericope.verse}</h4>
         <p>${data.homily.text1}</p>
         <p>${data.homily.text2}</p>
         <p>${data.homily.text3}</p>`;
