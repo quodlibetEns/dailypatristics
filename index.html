@@ -93,27 +93,40 @@
 
             <!--this form is the initial plan to get something that works fine.
             In the future a cleaner, more flexible, more easily operable system would be nice.-->
-            <form action="" id="request-form">
+            <form action="javascript:void(0)" id="request-form">
 
                 <label for="temporale">Choose from the <em>temporal</em> cycle:</label>
                 <select name="temporale" id="temporale">
+                    <optgroup label="Advent">
+                        <option value="advent-1">Advent I</option>
+                        <option value="advent-2">Advent II</option>
+                        <option value="advent-3">Advent III</option>
+                        <option value="advent-ember-wed">Ember Wednesday in Advent</option>
+                        <option value="advent-ember-fri">Ember Friday in Advent</option>
+                        <option value="advent-ember-sat">Ember Saturday in Advent</option>
+                        <option value="advent-4">Advent IV</option>
+                    </optgroup>
                     <!--millions of <option>s here-->
-                </select><br>
+                </select>
+                <button class="generate" id="generate-temporale" onclick="findTexts('temporale')">Find texts</button>
+                <br>
 
                 <label for="sanctorale">Choose from the <em>sanctoral</em> cycle:</label>
                 <select name="sanctorale" id="sanctorale">
                     <!--millions of <option>s here-->
-                </select><br>
+                </select>
+                <button class="generate" id="generate-sanctorale" onclick="findTexts('sanctorale')">Find texts</button>
+                <br>
 
                 <label for="other">Choose from the <em>commons and votives</em>:</label>
                 <select name="other" id="other">
-                    <option value="defunctorum">Office of the dead</option>
-                    <option value="parvum">Saturday office of the BVM</option>
-                    <option value="common-1">Vigil of a saint or saints</option>
+                    <option value="defunctorum-">Office of the dead</option>
+                    <option value="bvm-">Saturday office of the BVM</option>
+                    <option value="com1-">Vigil of a saint or saints</option>
                     <!--13 more <option>s here-->
-                </select><br>
-
-                <button id="generate">Find texts</button>
+                </select>
+                <button class="generate" id="generate-other" onclick="findTexts('other')">Find texts</button>
+                <br>
 
             </form>
         </section>

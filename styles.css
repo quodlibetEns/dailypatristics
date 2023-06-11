@@ -301,13 +301,13 @@ select {
     padding: 2px;
 }
 
-#generate {
+.generate {
     display: inline-block;
     border: none;
     border-radius: 0.3rem;
     box-sizing: content-box;
-    padding: 0.6rem 1rem;
-    margin: 1rem 0 0 0;
+    padding: 0.6em;
+    margin: 0.5em 1em;
     text-decoration: none;
     cursor: pointer;
     text-align: center;
