@@ -26,7 +26,6 @@ function validateInput (section, occasion) {
 async function fetchTexts (section, occasion) {
 
     if ( validateInput (section, occasion) ) {
-        console.log('fetchTexts reports: validateInput returned true, continuing'); //testing
 
             let jsonUri = `https://dailypatristics.netlify.app/texts/${section}/${occasion}.json`;
             console.log('fetchTexts reports that jsonUri is ' + jsonUri); //testing
@@ -51,14 +50,13 @@ async function getResults (selectId) {
 
     let occasion = document.getElementById(selectId).value; //occasion = the value of the box on which find texts was clicked, e.g. advent-1
     let data = await fetchTexts(selectId, occasion); // returns an object
-    console.log(`getResults reports: fetchTexts called with params ${selectId} and ${occasion}, returned ${data}`); //testing
 
     //check what texts there are, then print them
     let newContent = `<h2 class="occasion-title">${data.name}</h2>`;
 
     if (data.hasLegend) {
         let i = 1; //not 0 - later needs to match JSON keys which start from 1
-        while (i <= data.legendChunks) {
+        while (i <= data.legendChunks) { //print as many sermon chunks as there are
             j = "legend" + i.toString();
             newContent += `
                 <h3 class="title-en">${data[j].titleEn}</h3>
@@ -74,7 +72,6 @@ async function getResults (selectId) {
         let i = 1;
         while (i <= data.sermonChunks) {
             j = "sermon" + i.toString();
-            console.log(`sermon loop reports: j is ${j}`); //testing
             newContent += `
                 <h3 class="title-en">${data[j].titleEn}</h3>
                 <h4 class="title-la">${data[j].titleLa}</h4>
@@ -86,15 +83,19 @@ async function getResults (selectId) {
     }
 
     if (data.hasHomily) {
-        newContent += `
-            <h3 class="title-en">${data.homily.titleEn}</h3>
-            <h4 class="gospel-title-la">
-                <div>${data.homily.titleLa}</div>
-                <div class="pericope">${data.homily.pericope.gospel}. ${data.homily.pericope.chapter}: ${data.homily.pericope.verse}</div>
-            </h4>
-            <p>${data.homily.text1}</p>
-            <p>${data.homily.text2}</p>
-            <p>${data.homily.text3}</p>`;
+        let i = 1;
+        while (i <= data.homilyChunks) {
+            j = "homily" + i.toString();
+            newContent += `
+                <h3 class="title-en">${data[j].titleEn}</h3>
+                <h4 class="gospel-title-la">
+                    <div>${data[j].titleLa}</div>
+                    <div class="pericope">${data[j].pericope.gospel}. ${data[j].pericope.chapter}: ${data[j].pericope.verse}</div>
+                </h4>
+                <p>${data[j].text1}</p>
+                <p>${data[j].text2}</p>
+                <p>${data[j].text3}</p>`;
+        }
     }
 
     const result = document.getElementById('result');
