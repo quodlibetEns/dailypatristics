@@ -138,6 +138,7 @@ header>div {
 p.note {
     font-size: 0.8rem;
     font-style: italic;
+    line-height: 1em;
 }
 
 /* >> APPEARANCE MENU */
