@@ -151,7 +151,7 @@ header>div {
 }
 
 #appearance-mini, #appearance-menu, #appearance-widget {
-    position: absolute;
+    position: fixed;
     top: 200px;
     border: 1px solid var(--main-color);
     font-family: Lato, sans-serif;
