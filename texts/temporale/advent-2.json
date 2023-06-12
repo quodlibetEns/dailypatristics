@@ -3,7 +3,7 @@
     "hasLegend": false,
     "hasSermon": true,
     "sermonChunks": 1,
-    "sermon": {
+    "sermon1": {
         "author": "jerome",
         "titleEn": "From the Exposition of the Prophet Isaiah by St. Jerome the Priest",
         "titleLa": "Lib. 4 in cap. 11 Isaiae",
@@ -13,7 +13,7 @@
     },
     "hasHomily": true,
     "homilyChunks": 1,
-    "homily": {
+    "homily1": {
         "pericope": {
             "gospel": "Lk",
             "chapter": 21,

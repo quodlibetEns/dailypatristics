@@ -3,7 +3,7 @@
     "hasLegend": false,
     "hasSermon": true,
     "sermonChunks": 1,
-    "sermon": {
+    "sermon1": {
         "author": "leo",
         "titleEn": "From a Sermon by St. Leo the Pope",
         "titleLa": "Sermo de jejunio decimi mensis et collectis",
@@ -13,7 +13,7 @@
     },
     "hasHomily": true,
     "homilyChunks": 1,
-    "homily": {
+    "homily1": {
         "pericope": {
             "gospel": "Jn",
             "chapter": 1,

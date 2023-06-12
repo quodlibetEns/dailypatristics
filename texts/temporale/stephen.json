@@ -3,7 +3,7 @@
     "hasLegend": false,
     "hasSermon": true,
     "sermonChunks": 1,
-    "sermon": {
+    "sermon1": {
         "author": "fulgentius",
         "titleEn": "From a Sermon by St. Fulgentius the Bishop",
         "titleLa": "Sermo 3 de S. Stephano circa initium",
@@ -13,7 +13,7 @@
     },
     "hasHomily": true,
     "homilyChunks": 1,
-    "homily": {
+    "homily1": {
         "pericope": {
             "gospel": "Mt",
             "chapter": 23,
