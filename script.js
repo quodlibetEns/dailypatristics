@@ -58,7 +58,7 @@ async function getResults (selectId) {
 
     if (data.hasLegend) {
         let i = 0;
-        while (i < legendChunks) {
+        while (i < data.legendChunks) {
             j = "legend" + i.toString;
             newContent += `
                 <h3 class="title-en">${data.j.titleEn}</h3>
@@ -72,7 +72,7 @@ async function getResults (selectId) {
 
     if (data.hasSermon) {
         let i = 0;
-        while (i < sermonChunks) {
+        while (i < data.sermonChunks) {
             j = "sermon" + i.toString;
             console.log(`sermon loop reports: j is ${j}`); //testing
             newContent += `
