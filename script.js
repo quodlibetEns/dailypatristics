@@ -88,7 +88,7 @@ async function getResults (selectId) {
 
     result.innerHTML = newContent;
     result.style.display = "block"; //make results area visible once generated
-    result.scrollIntoView(true);
+    result.scrollIntoView(true); //true is value to alignToTop
 }
 
 

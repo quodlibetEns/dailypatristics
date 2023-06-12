@@ -1,4 +1,3 @@
-Fix anchors on buttons - hitting find texts should scroll to results
 Add scroll-to-top button (small, red, bottom right)
 Some nicer styling for results contents
 Consider difficulties caused by non-standard texts as they arise
