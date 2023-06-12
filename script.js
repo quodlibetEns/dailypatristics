@@ -61,11 +61,11 @@ async function getResults (selectId) {
         while (i <= data.legendChunks) {
             j = "legend" + i.toString();
             newContent += `
-                <h3 class="title-en">${data.j.titleEn}</h3>
-                <h4 class="title-la">${data.j.titleLa}</h4>
-                <p>${data.j.text1}</p>
-                <p>${data.j.text2}</p>
-                <p>${data.j.text3}</p>`;
+                <h3 class="title-en">${data[j].titleEn}</h3>
+                <h4 class="title-la">${data[j].titleLa}</h4>
+                <p>${data[j].text1}</p>
+                <p>${data[j].text2}</p>
+                <p>${data[j].text3}</p>`;
             i++;
         }
     }
@@ -76,11 +76,11 @@ async function getResults (selectId) {
             j = "sermon" + i.toString();
             console.log(`sermon loop reports: j is ${j}`); //testing
             newContent += `
-                <h3 class="title-en">${data.j.titleEn}</h3>
-                <h4 class="title-la">${data.j.titleLa}</h4>
-                <p>${data.j.text1}</p>
-                <p>${data.j.text2}</p>
-                <p>${data.j.text3}</p>`;
+                <h3 class="title-en">${data[j].titleEn}</h3>
+                <h4 class="title-la">${data[j].titleLa}</h4>
+                <p>${data[j].text1}</p>
+                <p>${data[j].text2}</p>
+                <p>${data[j].text3}</p>`;
             i++;
         }
     }
