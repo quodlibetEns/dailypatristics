@@ -86,7 +86,7 @@ async function getResults (selectId) {
 
     const result = document.getElementById('result');
 
-    result.insertBefore(newContent, result.children[0]); //add new html as first child of result
+    result.innerHTML += newContent; //add new html onto end of ucrrent result items
     result.style.display = "block"; //make results area visible once generated
     result.scrollIntoView(true); //true is value to alignToTop
 
