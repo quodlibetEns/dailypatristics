@@ -2,6 +2,7 @@
     "name": "Advent I",
     "hasLegend": false,
     "hasSermon": true,
+    "sermonChunks": 1,
     "sermon": {
         "author": "leo",
         "titleEn": "From a Sermon by St. Leo the Pope",
@@ -11,6 +12,7 @@
         "text3": "THE body without the soul could not conceive desire. The body's power to enjoy cometh from the same source as its power to choose. Hence it is the duty of the soul to deny something to its subject, (to wit, to the lower nature,) and thereby keep back the outer man from things unseemly. Then will the soul be less hindered by fleshly cravings, and have leisure in the inner court of the mind to dwell on the wisdom of God. There, when the turmoil of earthly care is stilled, will the soul feed on holy thoughts, and be entertained with the expectation of everlasting joy."
     },
     "hasHomily": true,
+    "homilyChunks": 1,
     "homily": {
         "pericope": {
             "gospel": "Mt",

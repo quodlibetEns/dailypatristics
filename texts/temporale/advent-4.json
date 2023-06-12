@@ -2,6 +2,7 @@
     "name": "Advent IV",
     "hasLegend": false,
     "hasSermon": true,
+    "sermonChunks": 1,
     "sermon": {
         "author": "leo",
         "titleEn": "From a Sermon by St. Leo the Pope",
@@ -11,6 +12,7 @@
         "text3": ""
     },
     "hasHomily": true,
+    "homilyChunks": 1,
     "homily": {
         "pericope": {
             "gospel": "Jn",

@@ -2,6 +2,7 @@
     "name": "Advent III",
     "hasLegend": false,
     "hasSermon": true,
+    "sermonChunks": 1,
     "sermon": {
         "author": "leo",
         "titleEn": "From a Sermon by St. Leo the Pope",
@@ -11,6 +12,7 @@
         "text3": "LET us defend the widow and support the orphan. Let us comfort the afflicted, and reconcile the estranged. Let the stranger be taken in and the oppressed be succoured. Let the naked be clothed and the sick cherished. So shall every one of us who hath thus spent himself in the service of God, the Author of all good, be fitted by him to receive the reward of his heavenly kingdom. We fast on Wednesday and Friday ; and there is likewise a Vigil on Saturday at the Church of Saint Peter the Apostle, that by his good prayers we may the more effectually obtain what we ask for, through our Lord Jesus Christ, who with the Father and the Holy Ghost, liveth and reigneth, one God, for ever and ever. Amen."
     },
     "hasHomily": true,
+    "homilyChunks": 1,
     "homily": {
         "pericope": {
             "gospel": "Mt",

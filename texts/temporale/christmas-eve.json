@@ -3,6 +3,7 @@
     "hasLegend": false,
     "hasSermon": false,
     "hasHomily": true,
+    "homilyChunks": 1,
     "homily": {
         "pericope": {
             "gospel": "Mt",

@@ -2,6 +2,7 @@
     "name": "St. Stephen, Protomartyr",
     "hasLegend": false,
     "hasSermon": true,
+    "sermonChunks": 1,
     "sermon": {
         "author": "fulgentius",
         "titleEn": "From a Sermon by St. Fulgentius the Bishop",
@@ -11,6 +12,7 @@
         "text3": ""
     },
     "hasHomily": true,
+    "homilyChunks": 1,
     "homily": {
         "pericope": {
             "gospel": "Mt",

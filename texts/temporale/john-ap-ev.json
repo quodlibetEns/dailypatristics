@@ -2,24 +2,34 @@
     "name": "St. John, Apostle and Evangelist",
     "hasLegend": false,
     "hasSermon": true,
-    "sermon": {
+    "sermonChunks": 2,
+    "sermon1": {
         "author": "jerome",
         "titleEn": "From the Book on Ecclesiastical Writers by St. Jerome the Priest",
-        "titleLa": "",
+        "titleLa": "Cap. 9.",
+        "text1": "",
+        "text2": "",
+        "text3": ""
+    },
+    "sermon2": {
+        "author": "jerome",
+        "titleEn": "From the Commentary of St. Jerome on the Epistle to the Galatians",
+        "titleLa": "Lib. 3, cap. 6.",
         "text1": "",
         "text2": "",
         "text3": ""
     },
     "hasHomily": true,
+    "homilyChunks": 1,
     "homily": {
         "pericope": {
-            "gospel": "Mt",
-            "chapter": 0,
-            "verse": 0
+            "gospel": "Jn",
+            "chapter": 21,
+            "verse": 19
         },
-        "author": "e.g. leo",
-        "titleEn": "",
-        "titleLa": "",
+        "author": "augustine",
+        "titleEn": "A Homily by St. Augustine the Bishop",
+        "titleLa": "Tract. 124 in Joannem post medium",
         "text1": "",
         "text2": "",
         "text3": ""

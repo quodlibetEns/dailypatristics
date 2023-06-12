@@ -2,6 +2,7 @@
     "name": "Advent II",
     "hasLegend": false,
     "hasSermon": true,
+    "sermonChunks": 1,
     "sermon": {
         "author": "jerome",
         "titleEn": "From the Exposition of the Prophet Isaiah by St. Jerome the Priest",
@@ -11,6 +12,7 @@
         "text3": "THE Spirit of the Lord, saith Isaiah, shall rest upon this flower which shall come forth from the stem and root of Jesse by means of the Virgin Mary. And truly the Spirit of the Lord did rest upon our Redeemer. It is written that in him dwelleth all the fulness of the godhead bodily. The Spirit was not shed on him by measure, as it is upon the Saints. To him we may apply the words of the Hebrew Gospel used by the Nazarenes, to wit : The whole fountain of the Holy Ghost shall be poured forth upon him. Of this the Apostle saith : Now the Lord is that Spirit ; and where the Spirit of the Lord is, there is liberty."
     },
     "hasHomily": true,
+    "homilyChunks": 1,
     "homily": {
         "pericope": {
             "gospel": "Lk",

@@ -57,37 +57,35 @@ async function getResults (selectId) {
     let newContent = `<h2 class="occasion-title">${data.name}</h2>`;
 
     if (data.hasLegend) {
-        newContent += `
-            <h3 class="title-en">${data.legend.titleEn}</h3>
-            <h4 class="title-la">${data.legend.titleLa}</h4>
-            <p>${data.legend.text1}</p>
-            <p>${data.legend.text2}</p>
-            <p>${data.legend.text3}</p>`;
+        let i = 0;
+        while (i < legendChunks) {
+            j = "legend" + i.toString;
+            newContent += `
+                <h3 class="title-en">${data.j.titleEn}</h3>
+                <h4 class="title-la">${data.j.titleLa}</h4>
+                <p>${data.j.text1}</p>
+                <p>${data.j.text2}</p>
+                <p>${data.j.text3}</p>`;
+            i++;
+        }
     }
 
     if (data.hasSermon) {
-        newContent += `
-            <h3 class="title-en">${data.sermon.titleEn}</h3>
-            <h4 class="title-la">${data.sermon.titleLa}</h4>
-            <p>${data.sermon.text1}</p>
-            <p>${data.sermon.text2}</p>
-            <p>${data.sermon.text3}</p>`;
+        let i = 0;
+        while (i < sermonChunks) {
+            j = "sermon" + i.toString;
+            console.log(`sermon loop reports: j is ${j}`); //testing
+            newContent += `
+                <h3 class="title-en">${data.j.titleEn}</h3>
+                <h4 class="title-la">${data.j.titleLa}</h4>
+                <p>${data.j.text1}</p>
+                <p>${data.j.text2}</p>
+                <p>${data.j.text3}</p>`;
+            i++;
+        }
     }
 
-    if (data.hasMultipleHomilies) { // to deal with christmas day ***NEEDS TESTING I.E DEFINITELY DOESN'T WORK***
-        for (let i = 0; i < data.numberOfHomilies; i++) {
-            let homilyNum = "homily" + i.toString();
-            newContent += `
-            <h3 class="title-en">${data.homilyNum.titleEn}</h3>
-            <h4 class="gospel-title-la">
-                <div>${data.homilyNum.titleLa}</div>
-                <div class="pericope">${data.homilyNum.pericope.gospel}. ${data.homilyNum.pericope.chapter}: ${data.homilyNum.pericope.verse}</div>
-            </h4>
-            <p>${data.homilyNum.text1}</p>
-            <p>${data.homilyNum.text2}</p>
-            <p>${data.homilyNum.text3}</p>`;
-        }
-    } else if (data.hasHomily) { // for normative case
+    if (data.hasHomily) {
         newContent += `
             <h3 class="title-en">${data.homily.titleEn}</h3>
             <h4 class="gospel-title-la">
