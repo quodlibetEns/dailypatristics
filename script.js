@@ -84,9 +84,11 @@ async function getResults (selectId) {
         <p>${data.homily.text3}</p>`;
     }
 
-    document.getElementById('result').innerHTML = newContent;
- 
-    document.getElementById('result').style.display = "block"; //make results area visible once generated
+    const result = document.getElementById('result');
+
+    result.innerHTML = newContent;
+    result.style.display = "block"; //make results area visible once generated
+    result.scrollIntoView(alignToTop);
 }
 
 
