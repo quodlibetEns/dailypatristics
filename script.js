@@ -137,12 +137,12 @@ function sans() {
 
 function normalSize() {
     document.getElementById('main').style.fontSize = "1rem";
-    document.getElementById('main').style.lineHeight = "1.2em";
+    document.getElementById('main').style.lineHeight = "1.4em";
 }
 
 function largeSize() {
-    document.getElementById('main').style.fontSize = "1.3rem";
-    document.getElementById('main').style.lineHeight = "1.8em";
+    document.getElementById('main').style.fontSize = "1.5rem";
+    document.getElementById('main').style.lineHeight = "2em";
 }
 
 function showPopUpMenu() {
