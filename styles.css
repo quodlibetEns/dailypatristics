@@ -347,6 +347,12 @@ select {
     font-size: 1.5rem;
 }
 
+.gospel-title {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
 #scroll-to-top {
     display: none;
     position: fixed;
