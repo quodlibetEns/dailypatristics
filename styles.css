@@ -135,6 +135,11 @@ header>div {
     z-index: 2;
 }
 
+p.note {
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
 /* >> APPEARANCE MENU */
 
 #appearance-mini {
