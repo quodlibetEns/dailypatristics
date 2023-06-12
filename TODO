@@ -1,8 +1,6 @@
-Test hyandling of multiple homilies i.e. xmas day
 Make scroll-to-top button disappear once clicked and reappear on scroll back down
 Add icon
 Add actual validation
-Sort flash of non-styled content caused by layout force
 Consider difficulties caused by non-standard texts as they arise
 Check and fix mobile layout
 Work out how to OCR a ton of texts
