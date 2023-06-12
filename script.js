@@ -162,4 +162,6 @@ const scrollToTopButton = document.getElementById('scroll-to-top');
 function scrollToTop () {
     scroll(0,0);
     scrollToTopButton.style.display = 'none';
+    console.log(scrollToTopButton); //testing
+    console.log(scrollToTopButton.style.display); //testing
 }
