@@ -353,6 +353,10 @@ select {
     justify-content: space-between;
 }
 
+.pericope {
+    color: var(--main-color);
+}
+
 #scroll-to-top {
     display: none;
     position: fixed;

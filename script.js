@@ -79,7 +79,7 @@ async function getResults (selectId) {
         <h3 class="title-en">${data.homily.titleEn}</h3>
         <h4 class="gospel-title-la">
             <div>${data.homily.titleLa}</div>
-            <div>${data.homily.pericope.gospel}. ${data.homily.pericope.chapter}: ${data.homily.pericope.verse}</div>
+            <div class="pericope">${data.homily.pericope.gospel}. ${data.homily.pericope.chapter}: ${data.homily.pericope.verse}</div>
         </h4>
         <p>${data.homily.text1}</p>
         <p>${data.homily.text2}</p>
