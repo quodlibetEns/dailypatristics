@@ -95,6 +95,7 @@ async function getResults (selectId) {
                 <p>${data[j].text1}</p>
                 <p>${data[j].text2}</p>
                 <p>${data[j].text3}</p>`;
+            i++;
         }
     }
 
