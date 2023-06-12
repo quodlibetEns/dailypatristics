@@ -1,4 +1,4 @@
-Make scroll-to-top button reappear on scroll back down
+Make scroll-to-top button disappear once clicked and reappear on scroll back down
 Some nicer styling for results contents
 Sort flash of non-styled content caused by layout force
 Consider difficulties caused by non-standard texts as they arise
