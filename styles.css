@@ -356,4 +356,8 @@ select {
     height: 3rem;
     border-radius: 100%;
     background-color: var(--main-color);
+    font-size: 3rem;
+    line-height: 1em;
+    text-align: center;
+    cursor: pointer;
 }

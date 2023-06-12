@@ -157,7 +157,9 @@ function hidePopUpMenu() {
     document.getElementById('pop-up-appearance-menu').style.display = "none";
 }
 
+const scrollToTopButton = document.getElementById('scroll-to-top');
 
 function scrollToTop () {
     scroll(0,0);
+    scrollToTopButton.style.display = 'none';
 }
