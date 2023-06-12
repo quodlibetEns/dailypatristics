@@ -54,7 +54,7 @@ async function getResults (selectId) {
     console.log(`getResults reports: fetchTexts called with params ${selectId} and ${occasion}, returned ${data}`); //testing
 
     //check what texts there are, then print them
-    let newContent = `<h2>${data.name}</h2>`;
+    let newContent = `<h2 class="occasion-title">${data.name}</h2>`;
 
     if (data.hasLegend) {
         newContent += `
@@ -94,7 +94,7 @@ async function getResults (selectId) {
 
 //============================================
 
-// DOM MANIPULATION: APPEARANCE CONTROLS
+// APPEARANCE CONTROLS
 
 function showOptions() {
     document.getElementById("appearance-mini").style.display = "none";
