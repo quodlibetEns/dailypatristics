@@ -57,8 +57,8 @@ async function getResults (selectId) {
     let newContent = `<h2 class="occasion-title">${data.name}</h2>`;
 
     if (data.hasLegend) {
-        let i = 0;
-        while (i < data.legendChunks) {
+        let i = 1; //not 0 - later needs to match JSON keys which start from 1
+        while (i <= data.legendChunks) {
             j = "legend" + i.toString();
             newContent += `
                 <h3 class="title-en">${data.j.titleEn}</h3>
@@ -71,8 +71,8 @@ async function getResults (selectId) {
     }
 
     if (data.hasSermon) {
-        let i = 0;
-        while (i < data.sermonChunks) {
+        let i = 1;
+        while (i <= data.sermonChunks) {
             j = "sermon" + i.toString();
             console.log(`sermon loop reports: j is ${j}`); //testing
             newContent += `
