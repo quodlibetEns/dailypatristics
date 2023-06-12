@@ -89,6 +89,8 @@ async function getResults (selectId) {
     result.innerHTML = newContent;
     result.style.display = "block"; //make results area visible once generated
     result.scrollIntoView(true); //true is value to alignToTop
+
+    document.getElementById('scroll-to-top').style.display = 'block';
 }
 
 
@@ -153,4 +155,9 @@ function showPopUpMenu() {
 function hidePopUpMenu() {
     document.getElementById('main').style.filter = "none";
     document.getElementById('pop-up-appearance-menu').style.display = "none";
+}
+
+
+function scrollToTop () {
+    scroll(0,0);
 }
