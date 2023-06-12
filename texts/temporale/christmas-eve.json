@@ -1,0 +1,19 @@
+{
+    "name": "The Vigil of the Nativity of Our Lord",
+    "hasLegend": false,
+    "hasSermon": false,
+    "hasHomily": true,
+    "homily": {
+        "pericope": {
+            "gospel": "Mt",
+            "chapter": 1,
+            "verse": 18
+        },
+        "author": "jerome",
+        "titleEn": "A Homily by St. Jerome the Priest",
+        "titleLa": "Lib. 1 in Commentarii in cap. 1 Matt.",
+        "text1": "",
+        "text2": "",
+        "text3": ""
+    }
+}

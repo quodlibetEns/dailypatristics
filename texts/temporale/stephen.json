@@ -1,0 +1,27 @@
+{
+    "name": "St. Stephen, Protomartyr",
+    "hasLegend": false,
+    "hasSermon": true,
+    "sermon": {
+        "author": "fulgentius",
+        "titleEn": "From a Sermon by St. Fulgentius the Bishop",
+        "titleLa": "Sermo 3 de S. Stephano circa initium",
+        "text1": "",
+        "text2": "",
+        "text3": ""
+    },
+    "hasHomily": true,
+    "homily": {
+        "pericope": {
+            "gospel": "Mt",
+            "chapter": 23,
+            "verse": 24
+        },
+        "author": "jerome",
+        "titleEn": "A Homily by St. Jerome the Priest",
+        "titleLa": "Lib. 4 Comment. in Cap. 23 Matt.",
+        "text1": "",
+        "text2": "",
+        "text3": ""
+    }
+}

@@ -58,32 +58,45 @@ async function getResults (selectId) {
 
     if (data.hasLegend) {
         newContent += `
-        <h3 class="title-en">${data.legend.titleEn}</h3>
-        <h4 class="title-la">${data.legend.titleLa}</h4>
-        <p>${data.legend.text1}</p>
-        <p>${data.legend.text2}</p>
-        <p>${data.legend.text3}</p>`;
+            <h3 class="title-en">${data.legend.titleEn}</h3>
+            <h4 class="title-la">${data.legend.titleLa}</h4>
+            <p>${data.legend.text1}</p>
+            <p>${data.legend.text2}</p>
+            <p>${data.legend.text3}</p>`;
     }
 
     if (data.hasSermon) {
         newContent += `
-        <h3 class="title-en">${data.sermon.titleEn}</h3>
-        <h4 class="title-la">${data.sermon.titleLa}</h4>
-        <p>${data.sermon.text1}</p>
-        <p>${data.sermon.text2}</p>
-        <p>${data.sermon.text3}</p>`;
+            <h3 class="title-en">${data.sermon.titleEn}</h3>
+            <h4 class="title-la">${data.sermon.titleLa}</h4>
+            <p>${data.sermon.text1}</p>
+            <p>${data.sermon.text2}</p>
+            <p>${data.sermon.text3}</p>`;
     }
 
-    if (data.hasHomily) {
+    if (data.hasMultipleHomilies) { // to deal with christmas day ***NEEDS TESTING I.E DEFINITELY DOESN'T WORK***
+        for (let i = 0; i < data.numberOfHomilies; i++) {
+            let homilyNum = "homily" + i.toString();
+            newContent += `
+            <h3 class="title-en">${data.homilyNum.titleEn}</h3>
+            <h4 class="gospel-title-la">
+                <div>${data.homilyNum.titleLa}</div>
+                <div class="pericope">${data.homilyNum.pericope.gospel}. ${data.homilyNum.pericope.chapter}: ${data.homilyNum.pericope.verse}</div>
+            </h4>
+            <p>${data.homilyNum.text1}</p>
+            <p>${data.homilyNum.text2}</p>
+            <p>${data.homilyNum.text3}</p>`;
+        }
+    } else if (data.hasHomily) { // for normative case
         newContent += `
-        <h3 class="title-en">${data.homily.titleEn}</h3>
-        <h4 class="gospel-title-la">
-            <div>${data.homily.titleLa}</div>
-            <div class="pericope">${data.homily.pericope.gospel}. ${data.homily.pericope.chapter}: ${data.homily.pericope.verse}</div>
-        </h4>
-        <p>${data.homily.text1}</p>
-        <p>${data.homily.text2}</p>
-        <p>${data.homily.text3}</p>`;
+            <h3 class="title-en">${data.homily.titleEn}</h3>
+            <h4 class="gospel-title-la">
+                <div>${data.homily.titleLa}</div>
+                <div class="pericope">${data.homily.pericope.gospel}. ${data.homily.pericope.chapter}: ${data.homily.pericope.verse}</div>
+            </h4>
+            <p>${data.homily.text1}</p>
+            <p>${data.homily.text2}</p>
+            <p>${data.homily.text3}</p>`;
     }
 
     const result = document.getElementById('result');

@@ -1,5 +1,6 @@
+Test hyandling of multiple homilies i.e. xmas day
 Make scroll-to-top button disappear once clicked and reappear on scroll back down
-Some nicer styling for results contents
+Add icon
 Sort flash of non-styled content caused by layout force
 Consider difficulties caused by non-standard texts as they arise
 Check and fix mobile layout
@@ -7,10 +8,10 @@ Work out how to OCR a ton of texts
 OCR, proof, format into JSON files, and integrate new texts/occasions
 Sort out apostrophes and quote marks
 Deal with issues arising from this with JS logic
-Make reading as comfortable as possible - consider texts, colours
+Make reading as comfortable as possible - consider fonts, spacing, colours
 Consider aligning header items with page content
 Build out a nicer UI for selecting an occasion, particularly as more are added
-Add other ways to select an occasion, e.g. 'today' button, date picker (would require coding liturgical calendar), range of mutliple occasions
+Add other ways to select an occasion, e.g. 'today' button, date picker (would require coding liturgical calendar), range of mutliple occasions, by author
 Add option to include pericope in results
 
 Long term ideas:

@@ -1,0 +1,55 @@
+{
+    "name": "The Nativity of Our Lord",
+    "hasLegend": false,
+    "hasSermon": true,
+    "sermon": {
+        "author": "leo",
+        "titleEn": "From a Sermon by St. Leo the Pope",
+        "titleLa": "Sermo 1 de Nativitate Domini",
+        "text1": "",
+        "text2": "",
+        "text3": ""
+    },
+    "hasHomily": false,
+    "hasMultipleHomilies": true,
+    "numberOfHomilies": 3,
+    "homily1": {
+        "pericope": {
+            "gospel": "Lk",
+            "chapter": 2,
+            "verse": 1
+        },
+        "author": "gregory",
+        "titleEn": "A Homily by St. Gregory the Pope",
+        "titleLa": "Homilia 8 in Evang.",
+        "text1": "",
+        "text2": "",
+        "text3": ""
+    },
+    "homily2": {
+        "pericope": {
+            "gospel": "Lk",
+            "chapter": 2,
+            "verse": 15
+        },
+        "author": "ambrose",
+        "titleEn": "A Homily by St. Ambrose the Bishop",
+        "titleLa": "Lib. 2 in cap. 2 Lucae circa medium",
+        "text1": "",
+        "text2": "",
+        "text3": ""
+    },
+    "homily3": {
+        "pericope": {
+            "gospel": "Jn",
+            "chapter": 1,
+            "verse": 1
+        },
+        "author": "augustine",
+        "titleEn": "A Homily by St. Augustine the Bishop",
+        "titleLa": "Tract. 1 in Joann., circa medium",
+        "text1": "",
+        "text2": "",
+        "text3": ""
+    }
+}

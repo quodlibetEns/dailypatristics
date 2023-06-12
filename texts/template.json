@@ -1,0 +1,19 @@
+{
+    "name": "",
+    "hasLegend": false,
+    "hasSermon": false,
+    "hasHomily": true,
+    "homily": {
+        "pericope": {
+            "gospel": "Mt",
+            "chapter": 0,
+            "verse": 0
+        },
+        "author": "e.g. leo",
+        "titleEn": "",
+        "titleLa": "",
+        "text1": "",
+        "text2": "",
+        "text3": ""
+    }
+}

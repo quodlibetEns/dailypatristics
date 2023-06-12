@@ -1,0 +1,27 @@
+{
+    "name": "St. John, Apostle and Evangelist",
+    "hasLegend": false,
+    "hasSermon": true,
+    "sermon": {
+        "author": "jerome",
+        "titleEn": "From the Book on Ecclesiastical Writers by St. Jerome the Priest",
+        "titleLa": "",
+        "text1": "",
+        "text2": "",
+        "text3": ""
+    },
+    "hasHomily": true,
+    "homily": {
+        "pericope": {
+            "gospel": "Mt",
+            "chapter": 0,
+            "verse": 0
+        },
+        "author": "e.g. leo",
+        "titleEn": "",
+        "titleLa": "",
+        "text1": "",
+        "text2": "",
+        "text3": ""
+    }
+}
