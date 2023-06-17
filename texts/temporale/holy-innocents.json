@@ -3,7 +3,7 @@
     "hasLegend": false,
     "hasSermon": true,
     "sermonConstituents": 1,
-    "sermon": {
+    "sermon1": {
         "author": "augustine",
         "titleEn": "From a Sermon by St. Augustine the Bishop",
         "titleLa": "Sermo 10 de Sanctis",
@@ -14,7 +14,7 @@
     },
     "hasHomily": true,
     "homilyConstituents": 1,
-    "homily": {
+    "homily1": {
         "pericope": {
             "gospel": "Mt",
             "chapter": 2,

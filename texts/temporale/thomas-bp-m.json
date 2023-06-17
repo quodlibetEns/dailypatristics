@@ -2,7 +2,7 @@
     "name": "",
     "hasLegend": true,
     "legendConstituents": 1,
-    "legend": {
+    "legend1": {
         "author": null,
         "titleEn": null,
         "titleLa": null,
@@ -14,7 +14,7 @@
     "hasSermon": false,
     "hasHomily": true,
     "homilyConstituents": 1,
-    "homily": {
+    "homily1": {
         "pericope": {
             "gospel": "Jn",
             "chapter": 10,

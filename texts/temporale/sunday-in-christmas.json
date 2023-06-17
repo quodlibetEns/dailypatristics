@@ -3,7 +3,7 @@
     "hasLegend": false,
     "hasSermon": true,
     "sermonConstituents": 1,
-    "sermon": {
+    "sermon1": {
         "author": "leo",
         "titleEn": "From a Sermon by St. Leo the Pope",
         "titleLa": "Sermo 9 de Nativ. Domini",
@@ -14,7 +14,7 @@
     },
     "hasHomily": true,
     "homilyConstituents": 1,
-    "homily": {
+    "homily1": {
         "pericope": {
             "gospel": "Mt",
             "chapter": 1,
