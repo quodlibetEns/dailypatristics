@@ -1,0 +1,29 @@
+{
+    "name": "The Circumcision of Our Lord",
+    "hasLegend": false,
+    "hasSermon": true,
+    "sermonChunks": 1,
+    "sermon": {
+        "author": "leo",
+        "titleEn": "From a Sermon by St. Leo the Pope",
+        "titleLa": "Sermo 7 de Nativitate Domini",
+        "text1": "",
+        "text2": "",
+        "text3": ""
+    },
+    "hasHomily": true,
+    "homilyChunks": 1,
+    "homily": {
+        "pericope": {
+            "gospel": "Lc",
+            "chapter": 2,
+            "verse": 15
+        },
+        "author": "ambrose",
+        "titleEn": "A Homily by St. Ambrose the Bishop",
+        "titleLa": "Lib. 2 in cap. 2 Lucae circa medium",
+        "text1": "",
+        "text2": "",
+        "text3": ""
+    }
+}

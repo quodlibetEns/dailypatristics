@@ -56,10 +56,10 @@ async function getResults (selectId) {
     if (data.hasLegend) {
         let i = 1; //not 0 - later needs to match JSON keys which start from 1
         while (i <= data.legendChunks) { //print as many sermon chunks as there are
-            j = "legend" + i.toString();
+            j = "legend" + i.toString()
+            if (data[j].titleEn != null) {newContent += `<h3 class="title-en">${data[j].titleEn}</h3>`};
+            if (data[j].titleLa != null) {newContent += `<h4 class="title-la">${data[j].titleLa}</h4>`};
             newContent += `
-                <h3 class="title-en">${data[j].titleEn}</h3>
-                <h4 class="title-la">${data[j].titleLa}</h4>
                 <p>${data[j].text1}</p>
                 <p>${data[j].text2}</p>
                 <p>${data[j].text3}</p>`;

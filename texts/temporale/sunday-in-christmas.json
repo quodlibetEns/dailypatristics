@@ -1,0 +1,29 @@
+{
+    "name": "Sunday Within the Octave of the Nativity",
+    "hasLegend": false,
+    "hasSermon": true,
+    "sermonChunks": 1,
+    "sermon": {
+        "author": "leo",
+        "titleEn": "From a Sermon by St. Leo the Pope",
+        "titleLa": "Sermo 9 de Nativ. Domini",
+        "text1": "",
+        "text2": "",
+        "text3": ""
+    },
+    "hasHomily": true,
+    "homilyChunks": 1,
+    "homily": {
+        "pericope": {
+            "gospel": "Mt",
+            "chapter": 1,
+            "verse": 18
+        },
+        "author": "chrysostom",
+        "titleEn": "A Homily by St. John Chrysostom",
+        "titleLa": "Homilia 4 in S. Matt.",
+        "text1": "",
+        "text2": "",
+        "text3": ""
+    }
+}
