@@ -2,17 +2,18 @@
     "name": "Advent IV",
     "hasLegend": false,
     "hasSermon": true,
-    "sermonChunks": 1,
+    "sermonConstituents": 1,
     "sermon1": {
         "author": "leo",
         "titleEn": "From a Sermon by St. Leo the Pope",
         "titleLa": "Sermo de jejunio decimi mensis et collectis",
+        "chunks": 3,
         "text1": "DEARLY beloved, if we study diligently the history of the creation of our race, we shall find that man was made in the image of God, to the end that he might gorw into his Maker&rsquo;s likeness. This is the natural dignity of human nature, that in us, as in a mirror, there can be a reflection of the goodness of the divine nature. To help us attain  this dignity, we are daily offered the grace of our Saviour, for as in the first Adam all men are fallen, so in the second Adam all men can be raised up again.",
         "text2": "The cause of our restoration is the mercy of God, and nothing else. we could not love him unless he had first loved us, and scattered the darkness of our ignorance by the light of his truth. This is the Lord promised by Isaiah, where he saith: I will bring the blind by a way that they knew not ; I will lead them in paths that they have no known : I will make darkness light before them, and crooked things straight : these things will I do unto them and not forsake them. And again : I was found of them that sought me not ; I was made manifest unto them that asked not after me.",
         "text3": "FROM the Apostle John we learn how this was fulfilled : We know that the Son of God is come, and hath given us an understanding, that we may know him that is true, and we are in him that is true, even in his Son. And again : we love him, because he first loved us. God, by loving us, reneweth his image in us. And that he may gind in us the likeness of his goodness, he giveth us grace to do his works. To this end he lighteth the sould as thought it were a candle. And so it is that he doth enkindle in out hearts the fire of his holy charity, in order that we may love noth him and whatsoever he loveth."
     },
     "hasHomily": true,
-    "homilyChunks": 1,
+    "homilyConstituents": 1,
     "homily1": {
         "pericope": {
             "gospel": "Jn",
@@ -22,6 +23,7 @@
         "author": "gregory",
         "titleEn": "A Homily by St. Gregory the Pope",
         "titleLa": "Homilia 7 in Evang.",
+        "chunks": 3,
         "text1": "DEARLY beloved, today&rsquo;s Gospel commendeth the lowly-mindedness of John. He was so great that it was thought he might be the Christ. Yet he chose to be taken only for what he really was, rather than to let the belief of men invest him with a dignity which was not his. For he confessed and denied not, but confessed, I am not the Christ. At one and the same time he confessed what he was, and denied what he was not ; and thus his very truth-sepaking made him a member of Christ whose title he would not falsely assume. In that he arrogated not to himself the Name of Christ, he became a member of Christ. Whilst he humbly strove to confess his own littleness, he earned by his simplicity to share in Christ&rsquo;s greatness.",
         "text2": "IN considering today&rsquo;s Lesson, we seem to find a contradiction between one of John&rsquo;s statements, and the sayings of our Redeemer as recorded in other parts of the Gospel. When his disciples asked our Lord regarding the coming of Elias, he answered : Elias is come already, and they knew him not, but have done unto him whatsoever they listed. And in another place he saith : If ye will receive it, John is Elias. But when John was asked if he were Elias, he answered : I am not. Why then, dearly beloved brethren, do we find him who is Truth asserting what the Prophet of the Truth denied? It must be that our Lord meant one thing when he said : This is : and that John meant another when he said : I am not. For how can he be the Prophet of the Truth, if his words agree not with the words of him who is the Truth?",
         "text3": "LET us then more minutely examine these words, and we shall find that there is no real contradiction. When the Angel announced to Zacharias the coming birth of John he said : He shall go before him in the spirit and power of Elias. As the old Elias will come again before the Second Advent of the Lord, so did John, as the new Elias, go before the First Advent, in the spirit and power of Elias. As the old Elias will be the Forerunner of the Judge, so the new Elias was the Forerunner of the Redemmer. John then was Elias in spirit, but not in person. John denied that he was the person known as Elias, whereas out Lord asserted that John had the spirit and power of Elias."

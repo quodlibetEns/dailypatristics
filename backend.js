@@ -54,46 +54,64 @@ async function getResults (selectId) {
     let newContent = `<h2 class="occasion-title">${data.name}</h2>`;
 
     if (data.hasLegend) {
+
         let i = 1; //not 0 - later needs to match JSON keys which start from 1
-        while (i <= data.legendChunks) { //print as many sermon chunks as there are
-            j = "legend" + i.toString()
-            if (data[j].titleEn != null) {newContent += `<h3 class="title-en">${data[j].titleEn}</h3>`};
+        while (i <= data.legendConstituents) { //print as many consitutents (1 constituent = from 1 text by 1 author) as there are
+
+            let j = "legend" + i.toString();
+            if (data[j].titleEn != null) {newContent += `<h3 class="title-en">${data[j].titleEn}</h3>`}; //legends often lack titles
             if (data[j].titleLa != null) {newContent += `<h4 class="title-la">${data[j].titleLa}</h4>`};
-            newContent += `
-                <p>${data[j].text1}</p>
-                <p>${data[j].text2}</p>
-                <p>${data[j].text3}</p>`;
+
+            let x = 1; //not 0 - num of chunks starts at 1
+            while (x <= data[j].chunks) { //while there is another chunk to print
+                let y = "text" + x.toString();
+                newContent += `<p>${data[j][y]}</p>`; //add that chunk to the printed content
+                x++;
+            }
+
             i++;
         }
     }
 
     if (data.hasSermon) {
         let i = 1;
-        while (i <= data.sermonChunks) {
-            j = "sermon" + i.toString();
+        while (i <= data.sermonConstituents) {
+            
+            let j = "sermon" + i.toString();
             newContent += `
                 <h3 class="title-en">${data[j].titleEn}</h3>
-                <h4 class="title-la">${data[j].titleLa}</h4>
-                <p>${data[j].text1}</p>
-                <p>${data[j].text2}</p>
-                <p>${data[j].text3}</p>`;
+                <h4 class="title-la">${data[j].titleLa}</h4>`;
+
+            let x = 1;
+            while (x <= data[j].chunks) {
+                let y = "text" + x.toString();
+                newContent += `<p>${data[j][y]}</p>`;
+                x++;
+            }
+
             i++;
         }
     }
 
     if (data.hasHomily) {
         let i = 1;
-        while (i <= data.homilyChunks) {
-            j = "homily" + i.toString();
+        while (i <= data.homilyConstituents) {
+
+            let j = "homily" + i.toString();
             newContent += `
                 <h3 class="title-en">${data[j].titleEn}</h3>
                 <h4 class="gospel-title-la">
                     <div>${data[j].titleLa}</div>
                     <div class="pericope">${data[j].pericope.gospel}. ${data[j].pericope.chapter}: ${data[j].pericope.verse}</div>
-                </h4>
-                <p>${data[j].text1}</p>
-                <p>${data[j].text2}</p>
-                <p>${data[j].text3}</p>`;
+                </h4>`;
+
+            let x = 1;
+            while (x <= data[j].chunks) {
+                let y = "text" + x.toString();
+                newContent += `<p>${data[j][y]}</p>`;
+                x++;
+            }
+
             i++;
         }
     }

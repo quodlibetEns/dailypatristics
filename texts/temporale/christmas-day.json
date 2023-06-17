@@ -2,17 +2,18 @@
     "name": "The Nativity of Our Lord",
     "hasLegend": false,
     "hasSermon": true,
-    "sermonChunks": 1,
+    "sermonConstituents": 1,
     "sermon1": {
         "author": "leo",
         "titleEn": "From a Sermon by St. Leo the Pope",
         "titleLa": "Sermo 1 de Nativitate Domini",
+        "chunks": 3,
         "text1": "",
         "text2": "",
         "text3": ""
     },
     "hasHomily": true,
-    "homilyChunks": 3,
+    "homilyConstituents": 3,
     "homily1": {
         "pericope": {
             "gospel": "Lk",
@@ -22,6 +23,7 @@
         "author": "gregory",
         "titleEn": "A Homily by St. Gregory the Pope",
         "titleLa": "Homilia 8 in Evang.",
+        "chunks": 1,
         "text1": "",
         "text2": "",
         "text3": ""
@@ -35,6 +37,7 @@
         "author": "ambrose",
         "titleEn": "A Homily by St. Ambrose the Bishop",
         "titleLa": "Lib. 2 in cap. 2 Lucae circa medium",
+        "chunks": 1,
         "text1": "",
         "text2": "",
         "text3": ""
@@ -48,6 +51,7 @@
         "author": "augustine",
         "titleEn": "A Homily by St. Augustine the Bishop",
         "titleLa": "Tract. 1 in Joann., circa medium",
+        "chunks": 1,
         "text1": "",
         "text2": "",
         "text3": ""

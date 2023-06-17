@@ -3,7 +3,7 @@
     "hasLegend": false,
     "hasSermon": false,
     "hasHomily": true,
-    "homilyChunks": 1,
+    "homilyConstituents": 1,
     "homily1": {
         "pericope": {
             "gospel": "Lk",
@@ -13,6 +13,7 @@
         "author": "gregory",
         "titleEn": "A Homily by St. Gregory the Pope",
         "titleLa": "Homilia 20 in Evang.",
+        "chunks": 3,
         "text1": "THE date, at which our Lord&rsquo;s forerunner entered on his public office of preaching, is indicated by mention of the Roman governour and the kings of Judaea. Mention is thus made of the Jewish rulers and the Gentile governour because John came to preach him who was to be accepted by Jews and Gentiles alike as their Redeemer. This mention of earthly sovereignty also serveth as a foreshadowing of the fact that the Gentiles were about to be gathered into one, and the Jewsa to be scattered abroad in punishment of their unbelief ; for in the whole heathen commonwealth we find the title of one Emperor, but in the small kingdom of Judaea are mentioned four masters.",
         "text2": "THESE are the words of our Redeemer : Every kingdom divided against itself is brought to desolation. It was therefore plain that the kingdom of Judaea was about to come to an end, since it was divided amongst so many rulers. We observe likewise thast the names of the reigning priests, as well as the kings, are given by the Evangelist Luke. It was fitting that mention be made both of the kings and of the priests who held office when John Baptist began to preach because John preached him who is at once our Priest and our King.",
         "text3": "AND he came into all the country about Jordan, preaching the baptism of repentance for the remission of sins. It is evident from these words that John Baptist not only preached the baptism of repentance, but also administered it. Yet he could not give Baptism unto remission of sins. For there is only one Baptism for the remission of sins, and that is our Christian Baptism. It is worthy of note that here the words used are : Preaching the baptism of repentance for the remiossion of sins. That is to say, he gave teaching concerning the Baptism which was to remit sins, though he himself could not give that Baptism. Even as the incarnate Word of God was far greater than the preacher that went before him, so is Christian Baptism, by which our sins are washed away, far greater than the baptism of repentance which his Forerunner preached, which could not wash away sin."

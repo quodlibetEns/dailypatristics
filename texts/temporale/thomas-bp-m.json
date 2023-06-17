@@ -1,18 +1,19 @@
 {
     "name": "",
     "hasLegend": true,
-    "legendChunks": 1,
+    "legendConstituents": 1,
     "legend": {
         "author": null,
         "titleEn": null,
         "titleLa": null,
+        "chunks": 3,
         "text1": "",
         "text2": "",
         "text3": ""
     },
     "hasSermon": false,
     "hasHomily": true,
-    "homilyChunks": 1,
+    "homilyConstituents": 1,
     "homily": {
         "pericope": {
             "gospel": "Jn",
@@ -22,6 +23,7 @@
         "author": "chrysostom",
         "titleEn": "A Homily by St. John Chrysostom",
         "titleLa": "Homilia 59 in Joannem",
+        "chunks": 3,
         "text1": "",
         "text2": "",
         "text3": ""

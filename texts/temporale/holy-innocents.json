@@ -2,17 +2,18 @@
     "name": "The Holy Innocents, Martyrs",
     "hasLegend": false,
     "hasSermon": true,
-    "sermonChunks": 1,
+    "sermonConstituents": 1,
     "sermon": {
         "author": "augustine",
         "titleEn": "From a Sermon by St. Augustine the Bishop",
         "titleLa": "Sermo 10 de Sanctis",
+        "chunks": 3,
         "text1": "",
         "text2": "",
         "text3": ""
     },
     "hasHomily": true,
-    "homilyChunks": 1,
+    "homilyConstituents": 1,
     "homily": {
         "pericope": {
             "gospel": "Mt",
@@ -22,6 +23,7 @@
         "author": "jerome",
         "titleEn": "A Homily by St. Jerome the Priest",
         "titleLa": "Lib. 1 Comm. in cap. 2 Matt. et apud Gloss. ord.",
+        "chunks": 3,
         "text1": "",
         "text2": "",
         "text3": ""

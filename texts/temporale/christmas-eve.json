@@ -3,7 +3,7 @@
     "hasLegend": false,
     "hasSermon": false,
     "hasHomily": true,
-    "homilyChunks": 1,
+    "homilyConstituents": 1,
     "homily1": {
         "pericope": {
             "gospel": "Mt",
@@ -13,6 +13,7 @@
         "author": "jerome",
         "titleEn": "A Homily by St. Jerome the Priest",
         "titleLa": "Lib. 1 Commentarii in cap. 1 Matt.",
+        "chunks": 3,
         "text1": "",
         "text2": "",
         "text3": ""
