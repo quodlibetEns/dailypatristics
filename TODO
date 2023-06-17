@@ -1,4 +1,5 @@
 Make appearance options keyboard-navigable
+Optimise backend.js
 Make scroll-to-top button disappear once clicked and reappear on scroll back down
 Add icon
 Add actual validation

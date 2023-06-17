@@ -59,7 +59,7 @@ async function getResults (selectId) {
         while (i <= data.legendConstituents) { //print as many consitutents (1 constituent = from 1 text by 1 author) as there are
 
             let j = "legend" + i.toString();
-            if (data[j].titleEn != null) {newContent += `<h3 class="title-en">${data[j].titleEn}</h3>`}; //legends often lack titles
+            if (data[j].titleEn != null) {newContent += `<h3 class="title-en">${data[j].titleEn}</h3>`} else {newContent += `<h3 class="title-en">"Legend"</h3>`}; //legends often lack titles
             if (data[j].titleLa != null) {newContent += `<h4 class="title-la">${data[j].titleLa}</h4>`};
 
             let x = 1; //not 0 - num of chunks starts at 1
