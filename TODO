@@ -5,6 +5,7 @@ Add icon
 Add actual validation
 Consider difficulties caused by non-standard texts as they arise
 Check and fix mobile layout
+Clean up CSS
 Work out how to OCR a ton of texts
 OCR, proof, format into JSON files, and integrate new texts/occasions
 Sort out apostrophes and quote marks

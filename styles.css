@@ -152,7 +152,6 @@ p.note {
 #appearance-mini {
     display: block;
     padding: 10px 5px;
-    cursor: pointer;
 }
 
 #appearance-mini, #appearance-menu {
@@ -167,9 +166,14 @@ p.note {
     top: 200px;
     border: 1px solid var(--main-color);
     font-family: Lato, sans-serif;
-    font-size: 0.8rem;
+    font-size: 1rem;
     line-height: 1em;
     text-align: center;
+}
+
+#appearance-menu-title {
+    font-size: 2rem;
+    line-height: 100%;
 }
 
 #appearance-widget {
@@ -177,7 +181,6 @@ p.note {
     height: 40px;
     border-radius: 100%;
     left: 3vw;
-    cursor: pointer;
 }
 
 #appearance-widget, #pop-up-appearance-menu, #appearance-menu {
@@ -206,27 +209,18 @@ p.note {
     }
 }
 
-#appearance-menu-title {
-    cursor: pointer;
-}
-
-#appearance-menu>div {
+#appearance-menu>div, #appearance-menu>button {
     padding: 10px;
 }
 
 .menu-group {
-    border-top: 1px solid var(--foreground-shade);
+    border-top: 2px solid var(--foreground-shade);
 }
 
 .menu-group-title {
-    padding-bottom: 3px;
-    border-bottom: 1px dotted var(--foreground-shade);
+    padding-bottom: 0.5rem;
     text-align: center;
-    font-style: italic;
-}
-
-.no-border {
-    border-bottom: none !important;
+    font-weight: bold;
 }
 
 .menu-items-container {
@@ -236,7 +230,7 @@ p.note {
     align-items: center;
 }
 
-.bipartite>div {
+.bipartite>button {
     flex-basis: 50%;
 }
 
@@ -246,13 +240,14 @@ p.note {
 
 .appearance-menu-item {
     padding: 3px;
-    border-right: 1px dotted var(--foreground-shade);
     text-align: center;
-    cursor: pointer;
+    margin-right: 0.5rem;
+    border: 2px solid var(--foreground-shade);
+    border-radius: 0.3rem;
 }
 
-.appearance-menu-item:last-child,.tripartite>.appearance-menu-item {
-    border-right: none;
+.appearance-menu-item:last-child {
+    margin-right: 0;
 }
 
 #light-theme {
@@ -280,16 +275,14 @@ p.note {
 
 #standard-size {
     font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 #large-size {
-    font-size: 1.3rem;
-    line-height: 1.3rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
 }
 
-#close-pop-up {
-    cursor: pointer;
-}
 /* >> MAIN */
 
 main {
@@ -315,10 +308,17 @@ form {
 }
 
 select,button {
-    font-family: inherit;
-    font-size: inherit;
-    box-sizing: border-box;
-    margin: 0px 5px;
+    all: unset;
+    line-height: normal;
+}
+
+select:focus,button:focus {
+    outline: 5px auto Highlight; /*restore firefox default focus style*/
+    outline: 5px auto -webkit-focus-ring-color; /* Chrome and safari */
+}
+
+button {
+    cursor: pointer;
 }
 
 select {
@@ -337,7 +337,6 @@ select {
     padding: 0.6em;
     margin: 0.5em 1em;
     text-decoration: none;
-    cursor: pointer;
     text-align: center;
     background-color: var(--main-color);
     color: var(--background-shade);
@@ -382,6 +381,5 @@ select {
     font-size: 3rem;
     line-height: 0.9em;
     text-align: center;
-    cursor: pointer;
     color: var(--background-shade);
 }

@@ -19,33 +19,33 @@
     </header>
     <div id="header-border"></div>
 
-    <div id="appearance-mini" onclick="showOptions()">Appearance options, for comfortable reading</div>
+    <button id="appearance-mini" >Appearance options, for comfortable reading</button>
 
     <div id="appearance-menu">
-        <div id="appearance-menu-title" onclick="hideOptions()">Appearance options, for comfortable reading</div>
+        <button id="appearance-menu-title">&#9447;</button>
         
         <div class="menu-group">
-            <div class="menu-group-title no-border">Colours</div>
+            <div class="menu-group-title">Colours</div>
             <div class="menu-items-container tripartite">
-                <div class="appearance-menu-item" id="light-theme" onclick="changeTheme('light')">Dark on light</div>
-                <div class="appearance-menu-item" id="dark-theme" onclick="changeTheme('dark')">Light on dark</div>
-                <div class="appearance-menu-item" id="contrast-theme" onclick="changeTheme('contrast')">High contrast</div>
+                <button class="appearance-menu-item" id="light-theme">Dark on light</button>
+                <button class="appearance-menu-item" id="dark-theme">Light on dark</button>
+                <button class="appearance-menu-item" id="contrast-theme">High contrast</button>
             </div>
         </div>
         
         <div class="menu-group">
             <div class="menu-group-title">Typeface</div>
             <div class="menu-items-container bipartite">
-                <div class="appearance-menu-item" id="serif-typeface" onclick="serif()">Serif</div>
-                <div class="appearance-menu-item" id="sans-typeface" onclick="sans()">Sans-serif</div>
+                <button class="appearance-menu-item" id="serif-typeface">Serif</button>
+                <button class="appearance-menu-item" id="sans-typeface">Sans-serif</button>
             </div>
         </div>
         
         <div class="menu-group">
             <div class="menu-group-title">Font size</div>
             <div class="menu-items-container bipartite">
-                <div class="appearance-menu-item" id="standard-size" onclick="normalSize()">Standard</div>
-                <div class="appearance-menu-item" id="large-size" onclick="largeSize()">Large</div>
+                <button class="appearance-menu-item" id="standard-size">Standard</button>
+                <button class="appearance-menu-item" id="large-size">Large</button>
             </div>
         </div>
     </div>
